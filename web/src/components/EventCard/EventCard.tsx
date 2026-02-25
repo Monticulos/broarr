@@ -1,9 +1,10 @@
-import type { Event } from "../../types/event";
-import CategoryBadge from "../CategoryBadge/CategoryBadge";
-import { formatEventDate } from "../../utils/formatDate";
-import styles from "./EventCard.module.css";
+import { Card, Heading, Paragraph, Link } from '@digdir/designsystemet-react';
+import type { Event } from '../../types/event';
+import CategoryBadge from '../CategoryBadge/CategoryBadge';
+import { formatEventDate } from '../../utils/formatDate';
+import styles from './EventCard.module.css';
 
-const LOCATION_ICON = "📍";
+const LOCATION_ICON = '📍';
 
 interface Props {
   event: Event;
@@ -12,42 +13,49 @@ interface Props {
 
 export default function EventCard({ event, onClick }: Props) {
   return (
-    <article
+    <Card
       className={styles.card}
       onClick={onClick}
       role="button"
       tabIndex={0}
-      onKeyDown={(e) => e.key === "Enter" && onClick()}
+      onKeyDown={(e) => e.key === 'Enter' && onClick()}
     >
-      <div className={styles.meta}>
-        <CategoryBadge category={event.category} />
-        <time className={styles.date} dateTime={event.startDate}>
-          {formatEventDate(event.startDate)}
-        </time>
-      </div>
+      <Card.Block>
+        <div className={styles.meta}>
+          <CategoryBadge category={event.category} />
+          <time className={styles.date} dateTime={event.startDate}>
+            {formatEventDate(event.startDate)}
+          </time>
+        </div>
 
-      <h2 className={styles.title}>{event.title}</h2>
+        <Heading level={2} data-size="sm">
+          {event.title}
+        </Heading>
 
-      {event.location && (
-        <p className={styles.location}>{LOCATION_ICON} {event.location}</p>
-      )}
+        {event.location && (
+          <Paragraph data-size="sm">
+            {LOCATION_ICON} {event.location}
+          </Paragraph>
+        )}
 
-      <p className={styles.description}>{event.description}</p>
+        <Paragraph data-size="sm">
+          {event.description}
+        </Paragraph>
+      </Card.Block>
 
-      <div className={styles.footer}>
+      <Card.Block className={styles.footer}>
         <span className={styles.source}>{event.source}</span>
         {event.url && (
-          <a
+          <Link
             href={event.url}
-            className={styles.link}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
           >
             Les mer →
-          </a>
+          </Link>
         )}
-      </div>
-    </article>
+      </Card.Block>
+    </Card>
   );
 }

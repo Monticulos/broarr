@@ -1,5 +1,6 @@
-import { formatUpdatedAtDate } from "../../utils/formatDate";
-import styles from "./Header.module.css";
+import { Heading, Paragraph } from '@digdir/designsystemet-react';
+import { formatUpdatedAtDate } from '../../utils/formatDate';
+import styles from './Header.module.css';
 
 interface Props {
   updatedAt: string | null;
@@ -9,10 +10,16 @@ export default function Header({ updatedAt }: Props) {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <h1 className={styles.title}>iBrønnøy</h1>
-        <p className={styles.tagline}>Arrangementer i Brønnøy</p>
+        <Heading level={1} data-size="xl" className={styles.title}>
+          iBrønnøy
+        </Heading>
+        <Paragraph className={styles.tagline}>
+          Arrangementer i Brønnøy
+        </Paragraph>
         {updatedAt && (
-          <p className={styles.updated}>Oppdatert {formatUpdatedAtDate(updatedAt)}</p>
+          <Paragraph data-size="sm" className={styles.updated}>
+            Oppdatert {formatUpdatedAtDate(updatedAt)}
+          </Paragraph>
         )}
       </div>
     </header>

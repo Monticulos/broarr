@@ -7,8 +7,7 @@
   gap: 1rem;
 }
 
-.status {
-  color: #6b7280;
+.statusContainer {
   text-align: center;
   padding: 2rem 0;
 }

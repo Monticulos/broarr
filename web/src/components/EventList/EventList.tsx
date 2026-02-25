@@ -1,6 +1,7 @@
-import type { Event } from "../../types/event";
-import EventCard from "../EventCard/EventCard";
-import styles from "./EventList.module.css";
+import { Spinner, Alert } from '@digdir/designsystemet-react';
+import type { Event } from '../../types/event';
+import EventCard from '../EventCard/EventCard';
+import styles from './EventList.module.css';
 
 interface Props {
   events: Event[];
@@ -10,8 +11,12 @@ interface Props {
 }
 
 export default function EventList({ events, loading, error, onEventClick }: Props) {
-  if (loading) return <p className={styles.status}>Laster arrangementer…</p>;
-  if (error) return <p className={styles.status}>Kunne ikke laste data: {error}</p>;
+  if (loading) return (
+    <div className={styles.statusContainer}>
+      <Spinner aria-label="Laster arrangementer" />
+    </div>
+  );
+  if (error) return <Alert data-color="danger">Kunne ikke laste data: {error}</Alert>;
 
   const now = new Date();
   now.setHours(0, 0, 0, 0);
@@ -27,7 +32,7 @@ export default function EventList({ events, loading, error, onEventClick }: Prop
   return (
     <div>
       {upcoming.length === 0 ? (
-        <p className={styles.status}>Ingen kommende arrangementer.</p>
+        <p className={styles.statusContainer}>Ingen kommende arrangementer.</p>
       ) : (
         <ul className={styles.list}>
           {upcoming.map((event) => (
