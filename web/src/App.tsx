@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import EventList from "./components/EventList/EventList";
-import EventModal from "./components/EventModal/EventModal";
-import type { Event, EventsData } from "./types/event";
+import type { EventsData } from "./types/event";
 import styles from "./App.module.css";
 
 export default function App() {
-  const [events, setEvents] = useState<Event[]>([]);
+  const [events, setEvents] = useState<EventsData["events"]>([]);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 
   useEffect(() => {
     fetch("data/events.json")
@@ -34,12 +32,8 @@ export default function App() {
           events={events}
           loading={loading}
           error={error}
-          onEventClick={setSelectedEvent}
         />
       </main>
-      {selectedEvent && (
-        <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
-      )}
     </>
   );
 }

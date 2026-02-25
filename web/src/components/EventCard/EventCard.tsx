@@ -8,18 +8,11 @@ const LOCATION_ICON = '📍';
 
 interface Props {
   event: Event;
-  onClick: () => void;
 }
 
-export default function EventCard({ event, onClick }: Props) {
+export default function EventCard({ event }: Props) {
   return (
-    <Card
-      className={styles.card}
-      onClick={onClick}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => e.key === 'Enter' && onClick()}
-    >
+    <Card>
       <Card.Block>
         <div className={styles.meta}>
           <CategoryBadge category={event.category} />
@@ -46,12 +39,7 @@ export default function EventCard({ event, onClick }: Props) {
       <Card.Block className={styles.footer}>
         <span className={styles.source}>{event.source}</span>
         {event.url && (
-          <Link
-            href={event.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <Link href={event.url} target="_blank" rel="noopener noreferrer">
             Les mer →
           </Link>
         )}

@@ -7,10 +7,9 @@ interface Props {
   events: Event[];
   loading: boolean;
   error: string | null;
-  onEventClick: (event: Event) => void;
 }
 
-export default function EventList({ events, loading, error, onEventClick }: Props) {
+export default function EventList({ events, loading, error }: Props) {
   if (loading) return (
     <div className={styles.statusContainer}>
       <Spinner aria-label="Laster arrangementer" />
@@ -37,7 +36,7 @@ export default function EventList({ events, loading, error, onEventClick }: Prop
         <ul className={styles.list}>
           {upcoming.map((event) => (
             <li key={event.id}>
-              <EventCard event={event} onClick={() => onEventClick(event)} />
+              <EventCard event={event} />
             </li>
           ))}
         </ul>
@@ -51,7 +50,7 @@ export default function EventList({ events, loading, error, onEventClick }: Prop
           <ul className={styles.list}>
             {past.map((event) => (
               <li key={event.id}>
-                <EventCard event={event} onClick={() => onEventClick(event)} />
+                <EventCard event={event} />
               </li>
             ))}
           </ul>

@@ -23,7 +23,7 @@ interface Props {
 
 export default function CategoryBadge({ category }: Props) {
   return (
-    <Tag data-color={COLOR_MAP[category]}>
+    <Tag data-color={COLOR_MAP[category]} data-size='sm'>
       {LABELS[category]}
     </Tag>
   );
