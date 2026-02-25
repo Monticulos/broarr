@@ -1,25 +1,17 @@
 import { useEffect, useRef } from "react";
-import type { Event } from "../types/event";
-import CategoryBadge from "./CategoryBadge";
+import type { Event } from "../../types/event";
+import CategoryBadge from "../CategoryBadge/CategoryBadge";
+import { formatEventDate } from "../../utils/formatDate";
 import styles from "./EventModal.module.css";
 
 const FOCUSABLE_SELECTORS =
   'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
+const LOCATION_ICON = "📍";
+
 interface Props {
   event: Event;
   onClose: () => void;
-}
-
-function formatDate(iso: string): string {
-  return new Intl.DateTimeFormat("nb-NO", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  }).format(new Date(iso));
 }
 
 export default function EventModal({ event, onClose }: Props) {
@@ -77,7 +69,7 @@ export default function EventModal({ event, onClose }: Props) {
         <div className={styles.header}>
           <CategoryBadge category={event.category} />
           <time className={styles.date} dateTime={event.startDate}>
-            {formatDate(event.startDate)}
+            {formatEventDate(event.startDate)}
           </time>
         </div>
 
@@ -87,7 +79,7 @@ export default function EventModal({ event, onClose }: Props) {
 
         {event.location && (
           <p className={styles.location}>
-            📍{" "}
+            {LOCATION_ICON}{" "}
             {mapsUrl ? (
               <a href={mapsUrl} target="_blank" rel="noopener noreferrer">
                 {event.location}

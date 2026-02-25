@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Header from "./components/Header";
-import EventList from "./components/EventList";
-import EventModal from "./components/EventModal";
+import Header from "./components/Header/Header";
+import EventList from "./components/EventList/EventList";
+import EventModal from "./components/EventModal/EventModal";
 import type { Event, EventsData } from "./types/event";
 import styles from "./App.module.css";
 
