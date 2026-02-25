@@ -1,7 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cd D:/Programmering/ibronnoy/web && npm install 2>&1)"
+      "Bash(cd D:/Programmering/ibronnoy/scraper && npx tsc --noEmit 2>&1)"
     ]
   }
 }

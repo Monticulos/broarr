@@ -5,7 +5,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <h1 className={styles.title}>iBrønnøy</h1>
-        <p className={styles.tagline}>Arrangementer og nyheter i Brønnøy</p>
+        <p className={styles.tagline}>Arrangementer i Brønnøy</p>
       </div>
     </header>
   );
