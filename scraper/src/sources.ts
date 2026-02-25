@@ -1,8 +1,14 @@
-export const TARGET_SOURCES = [
-  "https://www.bronnoy.kommune.no/",
-  "https://www.ba.no/",
-  "https://www.cafekred.no/arrangementer",
-  "https://bronnoybibliotek.no/arrangementer#/",
-  "https://www.havnesenteret.no/dette-skjer",
-  "https://www.bronnoy.kirken.no/Kalender"
+export interface Source {
+  url: string;
+  name: string;
+  selector?: string;
+}
+
+export const TARGET_SOURCES: Source[] = [
+  { url: "https://www.bronnoy.kommune.no/", name: "Brønnøy kommune" },
+  { url: "https://www.ba.no/", name: "Brønnøysunds Avis" },
+  { url: "https://www.cafekred.no/arrangementer", name: "Cafe Kred", selector: "main" },
+  { url: "https://bronnoybibliotek.no/arrangementer#/", name: "Brønnøy bibliotek" },
+  { url: "https://www.havnesenteret.no/dette-skjer", name: "Havnesenteret", selector: "main" },
+  { url: "https://www.bronnoy.kirken.no/Kalender", name: "Brønnøy kirke" },
 ];

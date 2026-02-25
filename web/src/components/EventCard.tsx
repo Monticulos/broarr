@@ -4,6 +4,7 @@ import styles from "./EventCard.module.css";
 
 interface Props {
   event: Event;
+  onClick: () => void;
 }
 
 function formatDate(iso: string): string {
@@ -17,9 +18,15 @@ function formatDate(iso: string): string {
   }).format(new Date(iso));
 }
 
-export default function EventCard({ event }: Props) {
+export default function EventCard({ event, onClick }: Props) {
   return (
-    <article className={styles.card}>
+    <article
+      className={styles.card}
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === "Enter" && onClick()}
+    >
       <div className={styles.meta}>
         <CategoryBadge category={event.category} />
         <time className={styles.date} dateTime={event.startDate}>
@@ -43,6 +50,7 @@ export default function EventCard({ event }: Props) {
             className={styles.link}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
           >
             Les mer →
           </a>

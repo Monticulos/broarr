@@ -1,40 +1,57 @@
-import { useEffect, useState } from "react";
-import type { Event, EventsData } from "../types/event";
+import type { Event } from "../types/event";
 import EventCard from "./EventCard";
 import styles from "./EventList.module.css";
 
-export default function EventList() {
-  const [events, setEvents] = useState<Event[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+interface Props {
+  events: Event[];
+  loading: boolean;
+  error: string | null;
+  onEventClick: (event: Event) => void;
+}
 
-  useEffect(() => {
-    fetch("data/events.json")
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json() as Promise<EventsData>;
-      })
-      .then((data) => {
-        const sorted = [...data.events].sort(
-          (a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime()
-        );
-        setEvents(sorted);
-      })
-      .catch((e) => setError(e.message))
-      .finally(() => setLoading(false));
-  }, []);
-
+export default function EventList({ events, loading, error, onEventClick }: Props) {
   if (loading) return <p className={styles.status}>Laster arrangementer…</p>;
-  if (error)   return <p className={styles.status}>Kunne ikke laste data: {error}</p>;
-  if (events.length === 0) return <p className={styles.status}>Ingen arrangementer funnet.</p>;
+  if (error) return <p className={styles.status}>Kunne ikke laste data: {error}</p>;
+
+  const now = new Date();
+  now.setHours(0, 0, 0, 0);
+
+  const upcoming = events
+    .filter((e) => new Date(e.startDate) >= now)
+    .sort((a, b) => a.startDate.localeCompare(b.startDate));
+
+  const past = events
+    .filter((e) => new Date(e.startDate) < now)
+    .sort((a, b) => b.startDate.localeCompare(a.startDate));
 
   return (
-    <ul className={styles.list}>
-      {events.map((event) => (
-        <li key={event.id}>
-          <EventCard event={event} />
-        </li>
-      ))}
-    </ul>
+    <div>
+      {upcoming.length === 0 ? (
+        <p className={styles.status}>Ingen kommende arrangementer.</p>
+      ) : (
+        <ul className={styles.list}>
+          {upcoming.map((event) => (
+            <li key={event.id}>
+              <EventCard event={event} onClick={() => onEventClick(event)} />
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {past.length > 0 && (
+        <details className={styles.pastSection}>
+          <summary className={styles.pastSummary}>
+            Tidligere arrangementer ({past.length})
+          </summary>
+          <ul className={styles.list}>
+            {past.map((event) => (
+              <li key={event.id}>
+                <EventCard event={event} onClick={() => onEventClick(event)} />
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+    </div>
   );
 }
