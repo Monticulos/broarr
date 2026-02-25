@@ -1,0 +1,62 @@
+{
+  "updatedAt": "2026-02-25T12:00:00",
+  "events": [
+    {
+      "id": "bronnoy-kulturhus-konsert-2026-03-07",
+      "title": "Vårens første konsert — Brønnøy Brass",
+      "description": "Brønnøy Brass inviterer til vårens første konsert i Kulturhuset. Kvelden byr på kjente melodier fra film og musikal, fremført av korpsmedlemmer i alle aldre.",
+      "category": "kultur",
+      "startDate": "2026-03-07T19:00:00",
+      "endDate": "2026-03-07T21:00:00",
+      "location": "Kulturhuset, Brønnøysund",
+      "url": "https://www.bronnoy.kommune.no",
+      "source": "bronnoy.kommune.no",
+      "scrapedAt": "2026-02-25T12:00:00"
+    },
+    {
+      "id": "bronnoyil-fotball-treningsstart-2026-03-10",
+      "title": "Treningsstart — Brønnøy IL Fotball",
+      "description": "Sesongstart for alle lag i Brønnøy IL Fotball. Oppmøte på Rishaugen kunstgress kl. 18:00. Ta med treningsklær og godt humør!",
+      "category": "sport",
+      "startDate": "2026-03-10T18:00:00",
+      "location": "Rishaugen kunstgress, Brønnøysund",
+      "url": "https://www.bronnoyil.no",
+      "source": "bronnoyil.no",
+      "scrapedAt": "2026-02-25T12:00:00"
+    },
+    {
+      "id": "kommunalt-folkemote-reguleringsplan-2026-03-18",
+      "title": "Folkemøte: Reguleringsplan for Sentrum Nord",
+      "description": "Brønnøy kommune inviterer til folkemøte om reguleringsplan for Sentrum Nord. Planen legger rammer for utvikling av boliger og næring i området. Alle er velkomne til å delta og komme med innspill.",
+      "category": "kommunalt",
+      "startDate": "2026-03-18T18:30:00",
+      "endDate": "2026-03-18T20:30:00",
+      "location": "Rådhuset, møterom 1, Brønnøysund",
+      "url": "https://www.bronnoy.kommune.no/aktuelt/",
+      "source": "bronnoy.kommune.no",
+      "scrapedAt": "2026-02-25T12:00:00"
+    },
+    {
+      "id": "naeringslivsdag-helgeland-2026-03-25",
+      "title": "Helgeland Næringslivsdag 2026",
+      "description": "Årets næringslivsdag samler bedrifter fra hele Helgeland for nettverksbygging, foredrag og utstilling. Hovedtema i år er bærekraftig havbruk og grønn omstilling.",
+      "category": "næringsliv",
+      "startDate": "2026-03-25T09:00:00",
+      "endDate": "2026-03-25T16:00:00",
+      "location": "Quality Hotel Brønnøysund",
+      "source": "visithelgeland.com",
+      "scrapedAt": "2026-02-25T12:00:00"
+    },
+    {
+      "id": "loppemarked-bronnoy-2026-04-05",
+      "title": "Vår-loppemarked på torget",
+      "description": "Stor loppemarked på Brønnøysund torg. Kom og selg eller kjøp brukte skatter. Gratis standplass — ta kontakt med arrangøren for å reservere.",
+      "category": "annet",
+      "startDate": "2026-04-05T10:00:00",
+      "endDate": "2026-04-05T15:00:00",
+      "location": "Brønnøysund torg",
+      "source": "ba.no",
+      "scrapedAt": "2026-02-25T12:00:00"
+    }
+  ]
+}

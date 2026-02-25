@@ -1,0 +1,23 @@
+.header {
+  background: #1e40af;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  opacity: 0.8;
+}

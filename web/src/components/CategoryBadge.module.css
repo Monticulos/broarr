@@ -1,0 +1,15 @@
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.kultur     { background: #dbeafe; color: #1d4ed8; }
+.sport      { background: #dcfce7; color: #15803d; }
+.næringsliv { background: #fef9c3; color: #a16207; }
+.kommunalt  { background: #ede9fe; color: #6d28d9; }
+.annet      { background: #f3f4f6; color: #374151; }
