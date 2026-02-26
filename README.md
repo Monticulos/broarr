@@ -1,4 +1,4 @@
-# iBrønnøy
+# BroArr
 
 A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI scraper collects upcoming events from local websites and publishes them as a React frontend on GitHub Pages.
 
@@ -7,7 +7,7 @@ A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI sc
 ## Repo structure
 
 ```
-ibronnoy/
+broarr/
 ├── types/
 │   └── event.ts              # Shared Event + EventsData TypeScript interfaces
 ├── web/                      # React + Vite frontend (deployed to GitHub Pages)
@@ -45,7 +45,7 @@ npm install
 npm run dev
 ```
 
-The site is served at `http://localhost:5173/ibronnoy/`.
+The site is served at `http://localhost:5173/broarr/`.
 
 ---
 

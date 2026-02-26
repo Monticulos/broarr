@@ -1,6 +1,6 @@
 # Scraping Guide
 
-This document is the primary reference for any LLM session that needs to run or extend the iBrønnøy scraper.
+This document is the primary reference for any LLM session that needs to run or extend the BroArr scraper.
 
 ---
 

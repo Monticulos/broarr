@@ -11,7 +11,7 @@ export default function Header({ updatedAt }: Props) {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Heading level={1} data-size="xl" className={styles.title}>
-          iBrønnøy
+          BroArr
         </Heading>
         <Paragraph className={styles.tagline}>
           Arrangementer i Brønnøy
