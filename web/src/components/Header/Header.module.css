@@ -1,5 +1,5 @@
 .header {
-  background: var(--ds-color-accent-base-default);
+  background: var(--ds-color-base-default);
   color: var(--ds-color-accent-base-contrast-default);
   padding: var(--ds-size-9) var(--ds-size-4);
 }
