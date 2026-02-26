@@ -11,10 +11,14 @@
 
 .title {
   margin: 0;
-  letter-spacing: -0.02em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+  letter-spacing: 0.02em;
+  line-height: 1;
 }
 
 .tagline {
-  margin: var(--ds-size-1) 0 0;
+  margin: var(--ds-size-1);
   opacity: 0.8;
 }
