@@ -1,21 +1,6 @@
 import { Tag } from '@digdir/designsystemet-react';
 import type { Event } from '../../types/event';
-
-const LABELS: Record<Event['category'], string> = {
-  kultur: 'Kultur',
-  sport: 'Sport',
-  næringsliv: 'Næringsliv',
-  kommunalt: 'Kommunalt',
-  annet: 'Annet',
-};
-
-const COLOR_MAP = {
-  kultur: 'info',
-  sport: 'success',
-  næringsliv: 'warning',
-  kommunalt: 'brand2',
-  annet: 'neutral',
-} as const;
+import { CATEGORY_LABELS, CATEGORY_COLOR_MAP } from '../../constants/categories';
 
 interface Props {
   category: Event['category'];
@@ -23,8 +8,8 @@ interface Props {
 
 export default function CategoryBadge({ category }: Props) {
   return (
-    <Tag data-color={COLOR_MAP[category]} data-size='sm'>
-      {LABELS[category]}
+    <Tag data-color={CATEGORY_COLOR_MAP[category]} data-size='sm'>
+      {CATEGORY_LABELS[category]}
     </Tag>
   );
 }

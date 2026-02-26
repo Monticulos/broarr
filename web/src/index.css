@@ -5,6 +5,8 @@
 }
 
 :root {
+  --content-max-width: 720px;
+  --title-font-size: 6rem;
   font-family: 'Figtree', system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

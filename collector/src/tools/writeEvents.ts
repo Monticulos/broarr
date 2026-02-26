@@ -9,11 +9,11 @@ import { flushEvents } from "../eventBuffer.js";
 const currentDir = dirname(fileURLToPath(import.meta.url));
 const eventsJsonPath = resolve(currentDir, "../../../web/public/data/events.json");
 
-function deduplicationKey(event: Event): string {
+export function deduplicationKey(event: Event): string {
   return `${event.title}|${event.startDate}|${event.source}`;
 }
 
-function isExpired(event: Event): boolean {
+export function isExpired(event: Event): boolean {
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
   return new Date(event.startDate) < thirtyDaysAgo;

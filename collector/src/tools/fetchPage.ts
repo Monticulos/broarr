@@ -7,14 +7,14 @@ const JS_RENDER_THRESHOLD = 500;
 const MAX_CHARS = 8000;
 const TRUNCATION_MARKER = "\n\n[TEXT TRUNCATED AT 8000 CHARACTERS]";
 
-function extractText(html: string, selector?: string): string {
+export function extractText(html: string, selector?: string): string {
   const $ = cheerio.load(html);
   $("script, style, noscript, nav, footer, header, aside").remove();
   const root = selector ? $(selector) : $("body");
   return root.text().replace(/\s+/g, " ").trim();
 }
 
-function truncate(text: string): string {
+export function truncate(text: string): string {
   if (text.length <= MAX_CHARS) return text;
   return text.slice(0, MAX_CHARS) + TRUNCATION_MARKER;
 }

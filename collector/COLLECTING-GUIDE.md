@@ -1,15 +1,15 @@
-# Scraping Guide
+# Collecting Guide
 
-This document is the primary reference for any LLM session that needs to run or extend the BroArr scraper.
+This document is the primary reference for any LLM session that needs to run or extend the BroArr collector.
 
 ---
 
 ## Quick start
 
 ```bash
-cd scraper
+cd collector
 cp .env.example .env          # fill in MISTRAL_API_KEY
-npx tsx src/index.ts           # scrape all sources
+npx tsx src/index.ts           # collect all sources
 npx tsx src/index.ts --source <url>   # single source
 ```
 
@@ -17,7 +17,7 @@ npx tsx src/index.ts --source <url>   # single source
 
 ## How the agent works
 
-The scraper uses a **ReAct loop** (Reason + Act) powered by LangChain LangGraph and Mistral AI. The agent receives a task prompt listing all source URLs and autonomously decides which tools to call and in what order.
+The collector uses a **ReAct loop** (Reason + Act) powered by LangChain LangGraph and Mistral AI. The agent receives a task prompt listing all source URLs and autonomously decides which tools to call and in what order.
 
 ### The three tools
 
@@ -45,7 +45,7 @@ fetchPage("https://example.com", "main")
 
 ## Adding a new source
 
-1. Open `scraper/src/sources.ts`.
+1. Open `collector/src/sources.ts`.
 2. Add an entry:
    ```ts
    { url: "https://example.com/events", name: "Display Name", selector: "article" }
@@ -63,7 +63,7 @@ The `selector` field is optional. When present, Cheerio extracts text only from 
 
 ## Improving extraction quality
 
-- **Switch to a larger model:** change `model: "mistral-small-latest"` to `"mistral-large-latest"` in `scraper/src/agent.ts` and `scraper/src/tools/extractEvents.ts` for better reasoning on complex pages.
+- **Switch to a larger model:** change `model: "mistral-small-latest"` to `"mistral-large-latest"` in `collector/src/agent.ts` and `collector/src/tools/extractEvents.ts` for better reasoning on complex pages.
 - **Tighten the system prompt:** edit `SYSTEM_PROMPT` in `extractEvents.ts` to add source-specific rules (e.g. "this source always lists events under the heading 'Kalender'").
 - **Use a selector:** add a `selector` to the source entry in `sources.ts` to filter the page before it reaches the model.
 - **Check terminal output:** the agent logs every tool call and result. Look for `extractEvents` returning 0 events or `FETCH_ERROR` entries.
@@ -83,7 +83,7 @@ interface Event {
   location?: string;   // Free-text venue name or address
   url?: string;        // Link to the original event page
   source: string;      // Domain name, e.g. "bronnoy.kommune.no"
-  scrapedAt: string;   // ISO 8601 timestamp of when extraction ran
+  collectedAt: string;   // ISO 8601 timestamp of when extraction ran
 }
 
 interface EventsData {
