@@ -6,3 +6,4 @@
 * Every React component should be in its own folder.
 * When creating commits, do not co-author by Claude.
 * Prefer to use available DS components before native html tags. E.g <h1> -> <Heading>, <p> -> <Paragraph>.
+* Use DS CSS tokens for colors, sizes, border-radius, and shadows.
