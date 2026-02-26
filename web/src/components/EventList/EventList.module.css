@@ -28,3 +28,9 @@
 .pastSummary:hover {
   color: #374151;
 }
+
+.monthHeading {
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin: 1.5rem 0 0.75rem;
+}

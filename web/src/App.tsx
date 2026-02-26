@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import EventList from "./components/EventList/EventList";
 import type { EventsData } from "./types/event";
 import styles from "./App.module.css";
@@ -10,23 +11,25 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const EVENTS_DATA_URL = "data/events.json";
+
   useEffect(() => {
-    fetch("data/events.json")
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json() as Promise<EventsData>;
+    fetch(EVENTS_DATA_URL)
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json() as Promise<EventsData>;
       })
       .then((data) => {
         setUpdatedAt(data.updatedAt);
         setEvents(data.events);
       })
-      .catch((e) => setError(e.message))
+      .catch((fetchError: Error) => setError(fetchError.message))
       .finally(() => setLoading(false));
   }, []);
 
   return (
     <>
-      <Header updatedAt={updatedAt} />
+      <Header />
       <main className={styles.main}>
         <EventList
           events={events}
@@ -34,6 +37,7 @@ export default function App() {
           error={error}
         />
       </main>
+      <Footer updatedAt={updatedAt} />
     </>
   );
 }

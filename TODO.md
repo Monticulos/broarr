@@ -1,4 +1,3 @@
 - Add filter for filtering out e.g. Church
 - Remove "Droppe til innhold" content from Brønnøy bibliotek
 - Add working links for each event
-- Add month headers

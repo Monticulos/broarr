@@ -1,0 +1,15 @@
+.footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.updated {
+  margin: 0;
+  color: #6b7280;
+}

@@ -1,5 +1,13 @@
 const NORWEGIAN_LOCALE = "nb-NO";
 
+export function formatMonthHeading(iso: string): string {
+  const formatted = new Intl.DateTimeFormat(NORWEGIAN_LOCALE, {
+    month: "long",
+    year: "numeric",
+  }).format(new Date(iso));
+  return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+}
+
 export function formatEventDate(iso: string): string {
   return new Intl.DateTimeFormat(NORWEGIAN_LOCALE, {
     weekday: "long",

@@ -1,12 +1,7 @@
 import { Heading, Paragraph } from '@digdir/designsystemet-react';
-import { formatUpdatedAtDate } from '../../utils/formatDate';
 import styles from './Header.module.css';
 
-interface Props {
-  updatedAt: string | null;
-}
-
-export default function Header({ updatedAt }: Props) {
+export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
@@ -16,11 +11,6 @@ export default function Header({ updatedAt }: Props) {
         <Paragraph className={styles.tagline}>
           Arrangementer i Brønnøy
         </Paragraph>
-        {updatedAt && (
-          <Paragraph data-size="sm" className={styles.updated}>
-            Oppdatert {formatUpdatedAtDate(updatedAt)}
-          </Paragraph>
-        )}
       </div>
     </header>
   );
