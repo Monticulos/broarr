@@ -18,6 +18,16 @@
   line-height: 1;
 }
 
+.titleContent {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-size-2);
+}
+
+.calendarIcon {
+  transform: translateY(0.1em);
+}
+
 .tagline {
   margin: var(--ds-size-1);
   opacity: 0.8;

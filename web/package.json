@@ -13,6 +13,7 @@
     "@digdir/designsystemet-css": "^1.12.1",
     "@digdir/designsystemet-react": "^1.12.1",
     "@digdir/designsystemet-theme": "^1.10.0",
+    "@navikt/aksel-icons": "^8.6.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
