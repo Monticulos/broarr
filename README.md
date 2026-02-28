@@ -1,6 +1,6 @@
 # BroArr
 
-A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI scraper collects upcoming events from local websites and publishes them as a React frontend on GitHub Pages.
+A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI collector gathers upcoming events from local websites and publishes them as a React frontend on GitHub Pages.
 
 ---
 
@@ -21,7 +21,7 @@ broarr/
 │           ├── EventModal.tsx
 │           ├── Header.tsx
 │           └── CategoryBadge.tsx
-├── scraper/                  # Node.js LangChain agent
+├── collector/                # Node.js LangChain agent
 │   ├── src/
 │   │   ├── index.ts          # Entry point + CLI arg handling
 │   │   ├── agent.ts          # LangChain ReAct agent setup
@@ -30,7 +30,7 @@ broarr/
 │   │       ├── fetchPage.ts
 │   │       ├── extractEvents.ts
 │   │       └── writeEvents.ts
-│   └── SCRAPING-GUIDE.md     # Full guide for running and extending the scraper
+│   └── COLLECTING-GUIDE.md   # Full guide for running and extending the collector
 └── .github/workflows/
     └── deploy.yml            # GitHub Actions: build + deploy on push to main
 ```
@@ -49,14 +49,14 @@ The site is served at `http://localhost:5173/broarr/`.
 
 ---
 
-## Running the scraper
+## Running the collector
 
-See [scraper/SCRAPING-GUIDE.md](scraper/SCRAPING-GUIDE.md) for full instructions.
+See [collector/COLLECTING-GUIDE.md](collector/COLLECTING-GUIDE.md) for full instructions.
 
 ```bash
-cd scraper
+cd collector
 cp .env.example .env   # add your MISTRAL_API_KEY
-npx tsx src/index.ts   # scrape all sources and update events.json
+npx tsx src/index.ts   # collect all sources and update events.json
 ```
 
 ---

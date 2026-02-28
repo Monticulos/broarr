@@ -11,7 +11,7 @@ function createEvent(overrides: Partial<Event> = {}): Event {
     category: "kultur",
     startDate: "2025-06-15T18:00:00Z",
     source: "TestSource",
-    scrapedAt: "2025-06-01T00:00:00Z",
+    collectedAt: "2025-06-01T00:00:00Z",
     ...overrides,
   };
 }

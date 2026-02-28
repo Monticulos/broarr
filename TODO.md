@@ -1,3 +1,7 @@
 - Add filter for filtering out e.g. Church
+- Search field
+- Favorites (use StarIcon, StarFillIcon and local storage)
 - Remove "Droppe til innhold" content from Brønnøy bibliotek
 - Add working links for each event
+- HTTPS
+- Add a calendar function on a separate page

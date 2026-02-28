@@ -18,7 +18,7 @@ const sources: Source[] =
     ? [{ url: args[sourceArgIndex + 1], name: args[sourceArgIndex + 1] }]
     : TARGET_SOURCES;
 
-const taskPrompt = `You are a web scraping agent for a local Norwegian events aggregator covering Brønnøysund.
+const taskPrompt = `You are an event collecting agent for a local Norwegian events aggregator covering Brønnøysund.
 
 For each source URL below, perform these steps in order:
 1. Call fetchPage with the URL to retrieve cleaned page text. If a selector is listed for that source, pass it as the selector argument to focus on the relevant section.
@@ -39,7 +39,7 @@ ${sources
   .join("\n")}`;
 
 async function main() {
-  console.log(`Scraping ${sources.length} source(s)...\n`);
+  console.log(`Collecting from ${sources.length} source(s)...\n`);
 
   const agent = createAgent();
   const stream = await agent.stream(
