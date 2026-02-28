@@ -1,3 +1,4 @@
+import { readFileSync } from "fs";
 import { config } from "dotenv";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
@@ -18,25 +19,17 @@ const sources: Source[] =
     ? [{ url: args[sourceArgIndex + 1], name: args[sourceArgIndex + 1] }]
     : TARGET_SOURCES;
 
-const taskPrompt = `You are an event collecting agent for a local Norwegian events aggregator covering Brønnøysund.
+const PROMPTS_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "prompts");
+const agentTaskTemplate = readFileSync(resolve(PROMPTS_DIR, "agent-task.md"), "utf-8");
 
-For each source URL below, perform these steps in order:
-1. Call fetchPage with the URL to retrieve cleaned page text. If a selector is listed for that source, pass it as the selector argument to focus on the relevant section.
-2. Call extractEvents with the page text and source URL to extract structured events.
-3. Call writeEvents to save the events.
-
-Rules:
-- Use each URL exactly as written — do not alter, correct, or encode any characters.
-- If fetchPage returns a FETCH_ERROR, skip that source and continue with the next one.
-- Process each source completely before moving to the next.
-
-Sources:
-${sources
+const sourcesList = sources
   .map((source, index) => {
     const selectorNote = source.selector ? ` (selector: "${source.selector}")` : "";
     return `${index + 1}. ${source.url}${selectorNote}`;
   })
-  .join("\n")}`;
+  .join("\n");
+
+const taskPrompt = `${agentTaskTemplate}\n${sourcesList}`;
 
 async function main() {
   console.log(`Collecting from ${sources.length} source(s)...\n`);
