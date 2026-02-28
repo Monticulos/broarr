@@ -20,4 +20,5 @@
 - Follow good accessibility patterns (built-in with Designsystemet).
 - Multi-line LLM prompts should be extracted into markdown files in the `collector/src/prompts` folder.
 - Test happy paths, error cases and important edge cases using Vitest.
+- Never use `fireEvent` from RTL. Use `@testing-library/user-event` instead.
 - After writing code, double check that it follows the requirements.
