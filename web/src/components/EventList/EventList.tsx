@@ -25,10 +25,6 @@ export default function EventList({ events, loading, error }: Props) {
     .filter((event) => new Date(event.startDate) >= now)
     .sort((a, b) => a.startDate.localeCompare(b.startDate));
 
-  const past = events
-    .filter((event) => new Date(event.startDate) < now)
-    .sort((a, b) => b.startDate.localeCompare(a.startDate));
-
   const YEAR_MONTH_KEY_LENGTH = 7;
 
   const groupByMonth = (eventList: Event[]) => {
@@ -64,22 +60,9 @@ export default function EventList({ events, loading, error }: Props) {
     </ul>
   );
 
-  return (
-    <div>
-      {upcoming.length === 0 ? (
-        <Paragraph className={styles.statusContainer}>Ingen kommende arrangementer.</Paragraph>
-      ) : (
-        renderGroupedList(upcoming)
-      )}
+  if (upcoming.length === 0) {
+    return <Paragraph className={styles.statusContainer}>Ingen kommende arrangementer.</Paragraph>;
+  }
 
-      {past.length > 0 && (
-        <details className={styles.pastSection}>
-          <summary className={styles.pastSummary}>
-            Tidligere arrangementer ({past.length})
-          </summary>
-          {renderGroupedList(past)}
-        </details>
-      )}
-    </div>
-  );
+  return renderGroupedList(upcoming);
 }

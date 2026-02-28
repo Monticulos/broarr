@@ -59,17 +59,7 @@ describe("EventList", () => {
     expect(screen.getByText(/Ingen kommende arrangementer/)).toBeInTheDocument();
   });
 
-  it("shows past events count in details summary", () => {
-    const pastEvents = [
-      createEvent({ id: "1", title: "Past 1", startDate: "2025-05-01T10:00:00Z" }),
-      createEvent({ id: "2", title: "Past 2", startDate: "2025-05-02T10:00:00Z" }),
-    ];
-
-    render(<EventList events={pastEvents} loading={false} error={null} />);
-    expect(screen.getByText(/Tidligere arrangementer \(2\)/)).toBeInTheDocument();
-  });
-
-  it("splits events into upcoming and past based on current date", () => {
+  it("does not show past events", () => {
     const events = [
       createEvent({ id: "1", title: "Past Event", startDate: "2025-05-01T10:00:00Z" }),
       createEvent({ id: "2", title: "Future Event", startDate: "2025-07-01T10:00:00Z" }),
@@ -77,7 +67,6 @@ describe("EventList", () => {
 
     render(<EventList events={events} loading={false} error={null} />);
     expect(screen.getByText("Future Event")).toBeInTheDocument();
-    expect(screen.getByText("Past Event")).toBeInTheDocument();
-    expect(screen.getByText(/Tidligere arrangementer \(1\)/)).toBeInTheDocument();
+    expect(screen.queryByText("Past Event")).not.toBeInTheDocument();
   });
 });
