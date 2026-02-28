@@ -236,7 +236,7 @@ describe("EventList search filtering", () => {
     const user = userEvent.setup();
     const events = [
       createFutureEvent({ id: "1", title: "Jazzkonsert", category: "kultur" }),
-      createFutureEvent({ id: "2", title: "Jazzfestival", category: "festival", startDate: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "2", title: "Jazzfestival", category: "annet", startDate: "2099-06-21T10:00:00Z" }),
       createFutureEvent({ id: "3", title: "Fotballkamp", category: "sport", startDate: "2099-06-22T10:00:00Z" }),
     ];
 
