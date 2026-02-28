@@ -31,11 +31,13 @@ export default function App() {
     <>
       <Header />
       <main className={styles.main}>
-        <EventList
-          events={events}
-          loading={loading}
-          error={error}
-        />
+        <div className={styles.inner}>
+          <EventList
+            events={events}
+            loading={loading}
+            error={error}
+          />
+        </div>
       </main>
       <Footer updatedAt={updatedAt} />
     </>

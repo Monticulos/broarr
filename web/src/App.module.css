@@ -1,5 +1,8 @@
 .main {
+  padding: var(--ds-size-9) var(--ds-size-4);
+}
+
+.inner {
   max-width: 720px;
-  margin: var(--ds-size-9) auto;
-  padding: 0 var(--ds-size-4);
+  margin: 0 auto;
 }
