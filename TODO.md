@@ -1,7 +1,11 @@
-- Reduce to 4 categories, since DS only allows 4 different colors
-- Search field
-- Favorites (use StarIcon, StarFillIcon and local storage)
-- Remove "Droppe til innhold" content from Brønnøy bibliotek
-- Add working links for each event
 - HTTPS
+- Remove "Droppe til innhold" content from Brønnøy bibliotek
+- Make Kred appear in location
+- Add working links for each event
+- Add cinema events
+- Connect to meta events
+- Create workaround for type issues for DS only allowing 4 colors for badges/tags/categories
+- Favorites (use StarIcon, StarFillIcon and local storage)
 - Add a calendar function on a separate page
+- Push alert on new events
+- Evals for prompts/llm models

@@ -4,7 +4,6 @@
 
 - Before using any library or framework, look up its documentation with Context7 MCP.
 - For LangChain/LangGraph, use Context7 to look up documentation at (`/langchain`).
-- When working with UI components, use Context7 to look up Designsystemet documentation (`/digdir/designsystemet`).
 
 # General requirements
 
@@ -15,13 +14,6 @@
 - Prefer simple and readable code over performance.
 - Prefer long and descriptive variable names to short and concise ones.
 - Don't use magic numbers or strings. Assign them to a constant or variable instead.
-- Prefer to use Digdir Designsystemet components over native html tags. E.g <h1> -> <Heading>, <p> -> <Paragraph>.
-- Use Designsystemet CSS tokens for colors, sizes, border-radius, and shadows.
-- Every React component should be in its own folder.
-- React components should mainly be concerned about presentation. Extract business logic into utility or hook files.
-- Follow good accessibility patterns (built-in with Designsystemet).
-- Check for redundant div elements that can be removed.
 - Multi-line LLM prompts should be extracted into markdown files in the `collector/src/prompts` folder.
 - Test happy paths, error cases and important edge cases using Vitest.
-- Never use `fireEvent` from RTL. Use `@testing-library/user-event` instead.
 - After writing code, double check that it follows the requirements.
