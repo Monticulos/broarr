@@ -6,7 +6,7 @@ export interface Source {
 
 export const TARGET_SOURCES: Source[] = [
   { url: "https://www.bronnoy.kommune.no/", name: "Brønnøy kommune" },
-  { url: "https://www.ba.no/", name: "Brønnøysunds Avis" },
+  // { url: "https://www.bronnoy.kommune.no/kino/", name: "Brønnøy kino" },
   { url: "https://www.cafekred.no/arrangementer", name: "Cafe Kred", selector: "main" },
   { url: "https://bronnoybibliotek.no/arrangementer#/", name: "Brønnøy bibliotek" },
   { url: "https://www.havnesenteret.no/dette-skjer", name: "Havnesenteret", selector: "main" },

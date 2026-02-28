@@ -8,7 +8,7 @@ export interface Event {
   location?: string;
   url?: string;
   source: string;
-  scrapedAt: string;   // ISO 8601
+  collectedAt: string;   // ISO 8601
 }
 
 export interface EventsData {

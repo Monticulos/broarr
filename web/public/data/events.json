@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-25T20:31:37.329Z",
+  "updatedAt": "2026-02-28T08:54:39.185Z",
   "events": [
     {
       "id": "havnesenteret-no-hjertedagan-2026-02-05",
@@ -11,7 +11,7 @@
       "location": "Havnesenteret, Brønnøysund",
       "url": "https://www.havnesenteret.no/dette-skjer",
       "source": "havnesenteret.no",
-      "scrapedAt": "2026-02-25T18:13:26.327Z"
+      "collectedAt": "2026-02-25T18:13:26.327Z"
     },
     {
       "id": "bronnoy-kommune-folkemote-om-byplan-bronnøysund-2026-02-24",
@@ -22,16 +22,7 @@
       "endDate": "2026-02-24T20:00:00",
       "location": "Samfunnshuset, Brønnøysund",
       "source": "bronnoy.kommune.no",
-      "scrapedAt": "2026-02-25T18:05:30.020Z"
-    },
-    {
-      "id": "bronnoybibliotek-droppe-til-innhold-2026-02-25",
-      "title": "Droppe til innhold",
-      "description": "Her vil det komme informasjon om hva som skjer på biblioteket.",
-      "category": "annet",
-      "startDate": "2026-02-25T00:00:00",
-      "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:12:57.319Z"
+      "collectedAt": "2026-02-25T18:05:30.020Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-02-25",
@@ -41,7 +32,7 @@
       "startDate": "2026-02-25T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-02-26",
@@ -51,7 +42,7 @@
       "startDate": "2026-02-26T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "cafekred-no-allmenquiz-26-februar-2026",
@@ -60,18 +51,7 @@
       "category": "kultur",
       "startDate": "2026-02-26T20:00:00",
       "source": "cafekred.no",
-      "scrapedAt": "2026-02-25T17:59:17.941Z"
-    },
-    {
-      "id": "bronnoybibliotek-droppe-til-innhold-2026-03-03",
-      "title": "Droppe til innhold",
-      "description": "Barseltreff på bibliotek",
-      "category": "kultur",
-      "startDate": "2026-03-03T11:00:00",
-      "endDate": "2026-03-03T14:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:08:54.235Z"
+      "collectedAt": "2026-02-25T17:59:17.941Z"
     },
     {
       "id": "bronnoybibliotek-barseltreff-pa-bibliotek-2026-03-03",
@@ -82,7 +62,16 @@
       "endDate": "2026-03-03T14:00:00",
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:12:57.319Z"
+      "collectedAt": "2026-02-25T18:12:57.319Z"
+    },
+    {
+      "id": "bronnoy-kommune-no-innskrivingsbrev-for-1-klasse-2026-03-04",
+      "title": "Innskrivingsbrev for 1. klasse",
+      "description": "Det digitale innskrivingsbrevet for kommende førsteklassinger vil bli sendt ut 4. mars kl. 09:00.",
+      "category": "kommunalt",
+      "startDate": "2026-03-04T09:00:00",
+      "source": "bronnoy.kommune.no",
+      "collectedAt": "2026-02-28T08:48:49.078Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-03-04",
@@ -92,7 +81,7 @@
       "startDate": "2026-03-04T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoybibliotek-direkte-fra-litteraturhuset-2026-03-05",
@@ -103,7 +92,7 @@
       "endDate": "2026-03-05T20:00:00",
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:08:54.235Z"
+      "collectedAt": "2026-02-25T18:08:54.235Z"
     },
     {
       "id": "bronnoy-kirken-kvinnenes-internasjonale-bonnedag-2026-03-06",
@@ -113,7 +102,7 @@
       "startDate": "2026-03-06T18:00:00",
       "location": "Brønnøy kirke",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-lordagskafe-2026-03-07",
@@ -123,7 +112,7 @@
       "startDate": "2026-03-07T12:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "cafekred-no-musikkbingo-7-mars-2026",
@@ -132,7 +121,7 @@
       "category": "kultur",
       "startDate": "2026-03-07T21:00:00",
       "source": "cafekred.no",
-      "scrapedAt": "2026-02-25T17:59:17.941Z"
+      "collectedAt": "2026-02-25T17:59:17.941Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-03-08",
@@ -142,18 +131,7 @@
       "startDate": "2026-03-08T18:00:00",
       "location": "Brønnøy kirke",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
-    },
-    {
-      "id": "bronnoybibliotek-droppe-til-innhold-2026-03-10",
-      "title": "Droppe til innhold",
-      "description": "Barseltreff på bibliotek",
-      "category": "kultur",
-      "startDate": "2026-03-10T11:00:00",
-      "endDate": "2026-03-10T14:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:08:54.235Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoybibliotek-barseltreff-pa-bibliotek-2026-03-10",
@@ -164,7 +142,7 @@
       "endDate": "2026-03-10T14:00:00",
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:12:57.319Z"
+      "collectedAt": "2026-02-25T18:12:57.319Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-03-11",
@@ -174,7 +152,7 @@
       "startDate": "2026-03-11T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoybibliotek-diktkveld-med-forfatter-ola-jorn-tilrem-2026-03-11",
@@ -185,7 +163,7 @@
       "endDate": "2026-03-11T20:00:00",
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:08:54.235Z"
+      "collectedAt": "2026-02-25T18:08:54.235Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-03-15",
@@ -195,18 +173,7 @@
       "startDate": "2026-03-15T11:00:00",
       "location": "Brønnøy kirke",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
-    },
-    {
-      "id": "bronnoybibliotek-droppe-til-innhold-2026-03-17",
-      "title": "Droppe til innhold",
-      "description": "Barseltreff på bibliotek",
-      "category": "kultur",
-      "startDate": "2026-03-17T11:00:00",
-      "endDate": "2026-03-17T14:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:08:54.235Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoybibliotek-barseltreff-pa-bibliotek-2026-03-17",
@@ -217,7 +184,7 @@
       "endDate": "2026-03-17T14:00:00",
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:12:57.319Z"
+      "collectedAt": "2026-02-25T18:12:57.319Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-03-18",
@@ -227,7 +194,7 @@
       "startDate": "2026-03-18T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "cafekred-no-mat-og-vinkveld-med-erik-strugstad-20-mars-2026",
@@ -236,7 +203,7 @@
       "category": "kultur",
       "startDate": "2026-03-20T19:00:00",
       "source": "cafekred.no",
-      "scrapedAt": "2026-02-25T17:59:17.941Z"
+      "collectedAt": "2026-02-25T17:59:17.941Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-03-22",
@@ -246,18 +213,7 @@
       "startDate": "2026-03-22T11:00:00",
       "location": "Brønnøy kirke",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
-    },
-    {
-      "id": "bronnoybibliotek-droppe-til-innhold-2026-03-24",
-      "title": "Droppe til innhold",
-      "description": "Barseltreff på bibliotek",
-      "category": "kultur",
-      "startDate": "2026-03-24T11:00:00",
-      "endDate": "2026-03-24T14:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:08:54.235Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoybibliotek-barseltreff-pa-bibliotek-2026-03-24",
@@ -268,7 +224,7 @@
       "endDate": "2026-03-24T14:00:00",
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:12:57.319Z"
+      "collectedAt": "2026-02-25T18:12:57.319Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-03-25",
@@ -278,7 +234,7 @@
       "startDate": "2026-03-25T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-03-26",
@@ -288,7 +244,7 @@
       "startDate": "2026-03-26T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "cafekred-no-christer-torjussen-stand-up-spesial-27-mars-2026",
@@ -297,18 +253,7 @@
       "category": "kultur",
       "startDate": "2026-03-27T21:00:00",
       "source": "cafekred.no",
-      "scrapedAt": "2026-02-25T17:59:17.941Z"
-    },
-    {
-      "id": "bronnoybibliotek-droppe-til-innhold-2026-03-31",
-      "title": "Droppe til innhold",
-      "description": "Barseltreff på bibliotek",
-      "category": "kultur",
-      "startDate": "2026-03-31T11:00:00",
-      "endDate": "2026-03-31T14:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:08:54.235Z"
+      "collectedAt": "2026-02-25T17:59:17.941Z"
     },
     {
       "id": "bronnoybibliotek-barseltreff-pa-bibliotek-2026-03-31",
@@ -319,7 +264,7 @@
       "endDate": "2026-03-31T14:00:00",
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:12:57.319Z"
+      "collectedAt": "2026-02-25T18:12:57.319Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-04-01",
@@ -329,18 +274,7 @@
       "startDate": "2026-04-01T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
-    },
-    {
-      "id": "bronnoybibliotek-droppe-til-innhold-2026-04-07",
-      "title": "Droppe til innhold",
-      "description": "Barseltreff på bibliotek",
-      "category": "kultur",
-      "startDate": "2026-04-07T11:00:00",
-      "endDate": "2026-04-07T14:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:08:54.235Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoybibliotek-barseltreff-pa-bibliotek-2026-04-07",
@@ -351,7 +285,7 @@
       "endDate": "2026-04-07T14:00:00",
       "location": "Brønnøy bibliotek Brønnøysund",
       "source": "bronnoybibliotek.no",
-      "scrapedAt": "2026-02-25T18:12:57.319Z"
+      "collectedAt": "2026-02-25T18:12:57.319Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-04-08",
@@ -361,7 +295,7 @@
       "startDate": "2026-04-08T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-lordagskafe-2026-04-11",
@@ -371,7 +305,7 @@
       "startDate": "2026-04-11T12:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-04-15",
@@ -381,7 +315,7 @@
       "startDate": "2026-04-15T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-04-22",
@@ -391,7 +325,7 @@
       "startDate": "2026-04-22T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "cafekred-no-dr-bergland-pa-liv-og-dod-24-april-2026",
@@ -400,7 +334,7 @@
       "category": "kultur",
       "startDate": "2026-04-24T19:00:00",
       "source": "cafekred.no",
-      "scrapedAt": "2026-02-25T17:59:17.941Z"
+      "collectedAt": "2026-02-25T17:59:17.941Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-04-29",
@@ -410,7 +344,7 @@
       "startDate": "2026-04-29T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-04-30",
@@ -420,7 +354,7 @@
       "startDate": "2026-04-30T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-05-06",
@@ -430,7 +364,7 @@
       "startDate": "2026-05-06T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-05-13",
@@ -440,7 +374,7 @@
       "startDate": "2026-05-13T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "cafekred-no-ole-soo-nils-ingar-aadne-15-mai-2026",
@@ -449,7 +383,7 @@
       "category": "kultur",
       "startDate": "2026-05-15T19:00:00",
       "source": "cafekred.no",
-      "scrapedAt": "2026-02-25T17:59:17.941Z"
+      "collectedAt": "2026-02-25T17:59:17.941Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-05-20",
@@ -459,7 +393,7 @@
       "startDate": "2026-05-20T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-05-27",
@@ -469,7 +403,7 @@
       "startDate": "2026-05-27T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-05-28",
@@ -479,7 +413,7 @@
       "startDate": "2026-05-28T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-06-03",
@@ -489,7 +423,7 @@
       "startDate": "2026-06-03T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-lordagskafe-2026-06-06",
@@ -499,7 +433,7 @@
       "startDate": "2026-06-06T12:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-06-10",
@@ -509,7 +443,7 @@
       "startDate": "2026-06-10T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-trille-tralle-treff-babysang-2026-06-17",
@@ -519,7 +453,7 @@
       "startDate": "2026-06-17T11:00:00",
       "location": "Kefas",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-06-25",
@@ -529,7 +463,7 @@
       "startDate": "2026-06-25T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-07-30",
@@ -539,7 +473,7 @@
       "startDate": "2026-07-30T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-08-27",
@@ -549,7 +483,7 @@
       "startDate": "2026-08-27T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-09-24",
@@ -559,7 +493,7 @@
       "startDate": "2026-09-24T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "cafekred-no-espena-brahamsen-avantgarde-10-oktober-2026",
@@ -568,7 +502,7 @@
       "category": "kultur",
       "startDate": "2026-10-10T19:00:00",
       "source": "cafekred.no",
-      "scrapedAt": "2026-02-25T17:59:17.941Z"
+      "collectedAt": "2026-02-25T17:59:17.941Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-10-29",
@@ -578,7 +512,7 @@
       "startDate": "2026-10-29T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-11-26",
@@ -588,7 +522,7 @@
       "startDate": "2026-11-26T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     },
     {
       "id": "bronnoy-kirken-gudstjeneste-2026-12-31",
@@ -598,7 +532,7 @@
       "startDate": "2026-12-31T11:30:00",
       "location": "Sykehjemmets kapell",
       "source": "bronnoy.kirken.no",
-      "scrapedAt": "2026-02-25T18:14:39.340Z"
+      "collectedAt": "2026-02-25T18:14:39.340Z"
     }
   ]
 }
