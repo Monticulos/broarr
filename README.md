@@ -4,6 +4,17 @@ A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI co
 
 ---
 
+## Tech stack
+
+| Layer | Technologies |
+|-------|-------------|
+| Frontend | React 19, TypeScript, Vite, Digdir Designsystemet |
+| Collector | LangChain, LangGraph, Mistral AI, Puppeteer, Cheerio |
+| Testing | Vitest, React Testing Library |
+| CI/CD | GitHub Actions, GitHub Pages |
+
+---
+
 ## Repo structure
 
 ```
@@ -45,7 +56,7 @@ npm install
 npm run dev
 ```
 
-The site is served at `http://localhost:5173/broarr/`.
+The site is served at `http://localhost:5173`.
 
 ---
 
