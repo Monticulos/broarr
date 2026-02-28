@@ -18,6 +18,7 @@
 - Use Designsystemet CSS tokens for colors, sizes, border-radius, and shadows.
 - Every React component should be in its own folder.
 - Follow good accessibility patterns (built-in with Designsystemet).
+- Check for redundant div elements that can be removed.
 - Multi-line LLM prompts should be extracted into markdown files in the `collector/src/prompts` folder.
 - Test happy paths, error cases and important edge cases using Vitest.
 - Never use `fireEvent` from RTL. Use `@testing-library/user-event` instead.

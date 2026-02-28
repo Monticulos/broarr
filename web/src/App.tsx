@@ -5,13 +5,13 @@ import EventList from "./components/EventList/EventList";
 import type { EventsData } from "./types/event";
 import styles from "./App.module.css";
 
+const EVENTS_DATA_URL = "data/events.json";
+
 export default function App() {
   const [events, setEvents] = useState<EventsData["events"]>([]);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
-  const EVENTS_DATA_URL = "data/events.json";
 
   useEffect(() => {
     fetch(EVENTS_DATA_URL)
