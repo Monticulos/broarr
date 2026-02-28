@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import EventList from "./EventList";
 import type { Event } from "../../types/event";
 
@@ -68,5 +69,85 @@ describe("EventList", () => {
     render(<EventList events={events} loading={false} error={null} />);
     expect(screen.getByText("Future Event")).toBeInTheDocument();
     expect(screen.queryByText("Past Event")).not.toBeInTheDocument();
+  });
+
+  it("shows all events when no category filter is selected", () => {
+    const events = [
+      createEvent({ id: "1", title: "Concert", category: "kultur", startDate: "2025-06-20T10:00:00Z" }),
+      createEvent({ id: "2", title: "Football", category: "sport", startDate: "2025-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+    expect(screen.getByText("Concert")).toBeInTheDocument();
+    expect(screen.getByText("Football")).toBeInTheDocument();
+  });
+
+  it("does not show filter chips in loading state", () => {
+    render(<EventList events={[]} loading={true} error={null} />);
+    expect(screen.queryByRole("group", { name: "Filter" })).not.toBeInTheDocument();
+  });
+
+  it("does not show filter chips when no upcoming events", () => {
+    const pastEvent = createEvent({
+      id: "1",
+      title: "Past Event",
+      startDate: "2025-05-01T10:00:00Z",
+    });
+
+    render(<EventList events={[pastEvent]} loading={false} error={null} />);
+    expect(screen.queryByRole("group", { name: "Filter" })).not.toBeInTheDocument();
+  });
+});
+
+describe("EventList category filtering", () => {
+  function createFutureEvent(overrides: Partial<Event> = {}): Event {
+    return createEvent({ startDate: "2099-06-20T10:00:00Z", ...overrides });
+  }
+
+  it("filters events when a category chip is clicked", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Concert", category: "kultur" }),
+      createFutureEvent({ id: "2", title: "Football", category: "sport", startDate: "2099-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.click(screen.getByRole("checkbox", { name: "Kultur" }));
+
+    expect(screen.getByText("Concert")).toBeInTheDocument();
+    expect(screen.queryByText("Football")).not.toBeInTheDocument();
+  });
+
+  it("shows only matching events when a different chip is clicked", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Concert", category: "kultur" }),
+      createFutureEvent({ id: "2", title: "Football", category: "sport", startDate: "2099-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.click(screen.getByRole("checkbox", { name: "Sport" }));
+
+    expect(screen.getByText("Football")).toBeInTheDocument();
+    expect(screen.queryByText("Concert")).not.toBeInTheDocument();
+  });
+
+  it("deselecting all chips shows all events again", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Concert", category: "kultur" }),
+      createFutureEvent({ id: "2", title: "Football", category: "sport", startDate: "2099-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.click(screen.getByRole("checkbox", { name: "Kultur" }));
+    expect(screen.queryByText("Football")).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("checkbox", { name: "Kultur" }));
+    expect(screen.getByText("Concert")).toBeInTheDocument();
+    expect(screen.getByText("Football")).toBeInTheDocument();
   });
 });

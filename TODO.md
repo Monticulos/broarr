@@ -1,4 +1,4 @@
-- Add filter for filtering out e.g. Church
+- Reduce to 4 categories, since DS only allows 4 different colors
 - Search field
 - Favorites (use StarIcon, StarFillIcon and local storage)
 - Remove "Droppe til innhold" content from Brønnøy bibliotek

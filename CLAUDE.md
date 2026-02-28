@@ -10,6 +10,7 @@
 
 - Use SRP, DRY, KISS and YAGNI.
 - Prefer pure functions where practical.
+- Avoid nested if statements and loops.
 - Avoid excessive comments. Use descriptive function names instead.
 - Prefer simple and readable code over performance.
 - Prefer long and descriptive variable names to short and concise ones.
