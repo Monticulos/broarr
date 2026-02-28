@@ -1,0 +1,4 @@
+.search {
+  margin-block-end: var(--ds-size-4);
+  max-width: 25rem;
+}

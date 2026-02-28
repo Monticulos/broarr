@@ -151,3 +151,102 @@ describe("EventList category filtering", () => {
     expect(screen.getByText("Football")).toBeInTheDocument();
   });
 });
+
+describe("EventList search filtering", () => {
+  function createFutureEvent(overrides: Partial<Event> = {}): Event {
+    return createEvent({ startDate: "2099-06-20T10:00:00Z", ...overrides });
+  }
+
+  it("filters events by title", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Konsert i kulturhuset" }),
+      createFutureEvent({ id: "2", title: "Fotballkamp", startDate: "2099-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.type(screen.getByRole("searchbox"), "konsert");
+
+    expect(screen.getByText("Konsert i kulturhuset")).toBeInTheDocument();
+    expect(screen.queryByText("Fotballkamp")).not.toBeInTheDocument();
+  });
+
+  it("filters events by description", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Event A", description: "Jazz i parken" }),
+      createFutureEvent({ id: "2", title: "Event B", description: "Håndball", startDate: "2099-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.type(screen.getByRole("searchbox"), "jazz");
+
+    expect(screen.getByText("Event A")).toBeInTheDocument();
+    expect(screen.queryByText("Event B")).not.toBeInTheDocument();
+  });
+
+  it("filters events by location", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Event A", location: "Brønnøy kulturhus" }),
+      createFutureEvent({ id: "2", title: "Event B", location: "Salhus arena", startDate: "2099-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.type(screen.getByRole("searchbox"), "salhus");
+
+    expect(screen.getByText("Event B")).toBeInTheDocument();
+    expect(screen.queryByText("Event A")).not.toBeInTheDocument();
+  });
+
+  it("shows no-results message when search matches nothing", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Konsert" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.type(screen.getByRole("searchbox"), "finnes ikke");
+
+    expect(screen.getByText(/Ingen arrangementer funnet/)).toBeInTheDocument();
+  });
+
+  it("shows all events when search is cleared", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Konsert" }),
+      createFutureEvent({ id: "2", title: "Fotballkamp", startDate: "2099-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.type(screen.getByRole("searchbox"), "konsert");
+    expect(screen.queryByText("Fotballkamp")).not.toBeInTheDocument();
+
+    await user.clear(screen.getByRole("searchbox"));
+    expect(screen.getByText("Konsert")).toBeInTheDocument();
+    expect(screen.getByText("Fotballkamp")).toBeInTheDocument();
+  });
+
+  it("combines search with category filter", async () => {
+    const user = userEvent.setup();
+    const events = [
+      createFutureEvent({ id: "1", title: "Jazzkonsert", category: "kultur" }),
+      createFutureEvent({ id: "2", title: "Jazzfestival", category: "festival", startDate: "2099-06-21T10:00:00Z" }),
+      createFutureEvent({ id: "3", title: "Fotballkamp", category: "sport", startDate: "2099-06-22T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    await user.click(screen.getByRole("checkbox", { name: "Kultur" }));
+    await user.type(screen.getByRole("searchbox"), "jazz");
+
+    expect(screen.getByText("Jazzkonsert")).toBeInTheDocument();
+    expect(screen.queryByText("Jazzfestival")).not.toBeInTheDocument();
+    expect(screen.queryByText("Fotballkamp")).not.toBeInTheDocument();
+  });
+});
