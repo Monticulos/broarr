@@ -1,24 +1,43 @@
-import { Card, Heading, Paragraph, Link } from '@digdir/designsystemet-react';
+import { Card, Heading, Paragraph, Link, Button } from '@digdir/designsystemet-react';
+import { StarIcon, StarFillIcon } from '@navikt/aksel-icons';
 import type { Event } from '../../types/event';
 import CategoryBadge from '../CategoryBadge/CategoryBadge';
 import { formatEventDate } from '../../utils/formatDate';
 import styles from './EventCard.module.css';
 
 const LOCATION_ICON = '📍';
+const STAR_LABEL_FAVORITED = 'Fjern fra favoritter';
+const STAR_LABEL_UNFAVORITED = 'Legg til i favoritter';
 
 interface Props {
   event: Event;
+  isFavorited: boolean;
+  onToggleFavorite: (id: string) => void;
 }
 
-export default function EventCard({ event }: Props) {
+export default function EventCard({ event, isFavorited, onToggleFavorite }: Props) {
   return (
     <Card>
-      <Card.Block>
+      <Card.Block className={styles.mainBlock}>
         <div className={styles.meta}>
-          <CategoryBadge category={event.category} />
-          <time className={styles.date} dateTime={event.startDate}>
-            {formatEventDate(event.startDate)}
-          </time>
+          <div className={styles.metaLeft}>
+            <CategoryBadge category={event.category} />
+            <time className={styles.date} dateTime={event.startDate}>
+              {formatEventDate(event.startDate)}
+            </time>
+          </div>
+          <Button
+            className={styles.starButton}
+            icon={true}
+            variant="tertiary"
+            onClick={() => onToggleFavorite(event.id)}
+            aria-label={isFavorited ? STAR_LABEL_FAVORITED : STAR_LABEL_UNFAVORITED}
+            aria-pressed={isFavorited}
+          >
+            {isFavorited
+              ? <StarFillIcon aria-hidden fontSize="1.25rem" />
+              : <StarIcon aria-hidden fontSize="1.25rem" />}
+          </Button>
         </div>
 
         <Heading level={2} data-size="sm">

@@ -1,7 +1,5 @@
-- Remove "Droppe til innhold" content from Brønnøy bibliotek
 - Connect to meta events
 - Create workaround for type issues for DS only allowing 4 colors for badges/tags/categories
-- Favorites (use StarIcon, StarFillIcon and local storage), with favorite heading over months
 - Add a calendar function on a separate page
 - Push alert on new events
 - Evals for prompts/llm models

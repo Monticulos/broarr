@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { Spinner, Alert, Heading, Paragraph } from '@digdir/designsystemet-react';
 import type { Event } from '../../types/event';
 import { useEventFiltering } from '../../hooks/useEventFiltering';
+import { useFavorites } from '../../hooks/useFavorites';
 import EventCard from '../EventCard/EventCard';
 import CategoryFilter from '../CategoryFilter/CategoryFilter';
 import Search from '../Search/Search';
@@ -41,6 +42,7 @@ function groupByMonth(eventList: Event[]) {
 
 export default function EventList({ events, loading, error }: Props) {
   const upcomingEvents = useMemo(() => getUpcomingEvents(events), [events]);
+  const { favoriteIds, isFavorite, toggleFavorite } = useFavorites();
 
   const {
     filteredEvents,
@@ -50,6 +52,11 @@ export default function EventList({ events, loading, error }: Props) {
     handleToggleCategory,
     availableCategories,
   } = useEventFiltering(upcomingEvents);
+
+  const favoritedFilteredEvents = useMemo(
+    () => filteredEvents.filter((e) => favoriteIds.has(e.id)),
+    [filteredEvents, favoriteIds]
+  );
 
   if (loading) return (
     <div className={styles.statusContainer}>
@@ -70,6 +77,20 @@ export default function EventList({ events, loading, error }: Props) {
         onToggleCategory={handleToggleCategory}
       />
       <Search value={searchQuery} onChange={setSearchQuery} />
+      {favoritedFilteredEvents.length > 0 && (
+        <>
+          <Heading level={2} data-size="sm" className={styles.monthHeading}>
+            Favoritter
+          </Heading>
+          <ul className={styles.list}>
+            {favoritedFilteredEvents.map((event) => (
+              <li key={event.id}>
+                <EventCard event={event} isFavorited={true} onToggleFavorite={toggleFavorite} />
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
       {filteredEvents.length === 0 ? (
         <Paragraph className={styles.statusContainer}>
           Ingen arrangementer funnet.
@@ -84,7 +105,11 @@ export default function EventList({ events, loading, error }: Props) {
               <ul className={styles.list}>
                 {groupEvents.map((event) => (
                   <li key={event.id}>
-                    <EventCard event={event} />
+                    <EventCard
+                      event={event}
+                      isFavorited={isFavorite(event.id)}
+                      onToggleFavorite={toggleFavorite}
+                    />
                   </li>
                 ))}
               </ul>

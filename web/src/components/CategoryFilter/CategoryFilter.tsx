@@ -16,7 +16,7 @@ export default function CategoryFilter({
 }: Props) {
   return (
     <fieldset className={styles.fieldset}>
-      <Label asChild data-size="sm">
+      <Label asChild>
         <legend>Filter</legend>
       </Label>
       <div className={styles.chipGroup}>

@@ -1,5 +1,6 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import EventCard from "./EventCard";
 import type { Event } from "../../types/event";
 
@@ -16,9 +17,21 @@ function createEvent(overrides: Partial<Event> = {}): Event {
   };
 }
 
+function renderCard(overrides: Partial<Event> = {}, isFavorited = false) {
+  const onToggleFavorite = vi.fn();
+  render(
+    <EventCard
+      event={createEvent(overrides)}
+      isFavorited={isFavorited}
+      onToggleFavorite={onToggleFavorite}
+    />
+  );
+  return { onToggleFavorite };
+}
+
 describe("EventCard", () => {
   it("renders title, description and source", () => {
-    render(<EventCard event={createEvent()} />);
+    renderCard();
 
     expect(screen.getByText("Test Event")).toBeInTheDocument();
     expect(screen.getByText("A test event description")).toBeInTheDocument();
@@ -26,24 +39,43 @@ describe("EventCard", () => {
   });
 
   it("renders location when provided", () => {
-    render(<EventCard event={createEvent({ location: "Brønnøysund" })} />);
+    renderCard({ location: "Brønnøysund" });
     expect(screen.getByText(/Brønnøysund/)).toBeInTheDocument();
   });
 
   it("does not render location when missing", () => {
-    render(<EventCard event={createEvent({ location: undefined })} />);
+    renderCard({ location: undefined });
     expect(screen.queryByText("📍")).not.toBeInTheDocument();
   });
 
   it("renders link when url is provided", () => {
-    render(<EventCard event={createEvent({ url: "https://example.com" })} />);
+    renderCard({ url: "https://example.com" });
     const link = screen.getByText("Les mer →");
     expect(link).toBeInTheDocument();
     expect(link.closest("a")).toHaveAttribute("href", "https://example.com");
   });
 
   it("does not render link when url is missing", () => {
-    render(<EventCard event={createEvent({ url: undefined })} />);
+    renderCard({ url: undefined });
     expect(screen.queryByText("Les mer →")).not.toBeInTheDocument();
+  });
+
+  it("renders unfavorited star button", () => {
+    renderCard({}, false);
+    expect(screen.getByRole("button", { name: "Legg til i favoritter" })).toBeInTheDocument();
+  });
+
+  it("renders favorited star button", () => {
+    renderCard({}, true);
+    expect(screen.getByRole("button", { name: "Fjern fra favoritter" })).toBeInTheDocument();
+  });
+
+  it("calls onToggleFavorite with event id on click", async () => {
+    const user = userEvent.setup();
+    const { onToggleFavorite } = renderCard({ id: "event-99" }, false);
+
+    await user.click(screen.getByRole("button", { name: "Legg til i favoritter" }));
+
+    expect(onToggleFavorite).toHaveBeenCalledWith("event-99");
   });
 });

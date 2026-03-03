@@ -21,6 +21,7 @@ describe("EventList", () => {
   beforeEach(() => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2025-06-10T12:00:00Z"));
+    localStorage.clear();
   });
 
   afterEach(() => {
@@ -97,12 +98,115 @@ describe("EventList", () => {
     render(<EventList events={[pastEvent]} loading={false} error={null} />);
     expect(screen.queryByRole("group", { name: "Filter" })).not.toBeInTheDocument();
   });
+
+  it("does not show Favoritter section by default", () => {
+    const event = createEvent({ id: "1", title: "Future Event", startDate: "2025-06-20T10:00:00Z" });
+
+    render(<EventList events={[event]} loading={false} error={null} />);
+    expect(screen.queryByRole("heading", { name: "Favoritter" })).not.toBeInTheDocument();
+  });
+
+  it("does not show past events in Favoritter section", () => {
+    localStorage.setItem("broarr-favorites", JSON.stringify(["past-1"]));
+
+    const events = [
+      createEvent({ id: "past-1", title: "Past Event", startDate: "2025-05-01T10:00:00Z" }),
+      createEvent({ id: "future-1", title: "Future Event", startDate: "2025-06-20T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+
+    expect(screen.queryByRole("heading", { name: "Favoritter" })).not.toBeInTheDocument();
+  });
+});
+
+describe("EventList favorites", () => {
+  function createFutureEvent(overrides: Partial<Event> = {}): Event {
+    return createEvent({ startDate: "2099-06-20T10:00:00Z", ...overrides });
+  }
+
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
+  it("shows Favoritter section after starring an event", async () => {
+    const user = userEvent.setup();
+    const event = createFutureEvent({ id: "1", title: "Future Event" });
+
+    render(<EventList events={[event]} loading={false} error={null} />);
+
+    await user.click(screen.getByRole("button", { name: "Legg til i favoritter" }));
+
+    expect(screen.getByRole("heading", { name: "Favoritter" })).toBeInTheDocument();
+  });
+
+  it("shows event in both Favoritter section and month group when starred", async () => {
+    const user = userEvent.setup();
+    const event = createFutureEvent({ id: "1", title: "Future Event" });
+
+    render(<EventList events={[event]} loading={false} error={null} />);
+
+    await user.click(screen.getByRole("button", { name: "Legg til i favoritter" }));
+
+    expect(screen.getAllByText("Future Event")).toHaveLength(2);
+  });
+
+  it("hides Favoritter section when category filter excludes favorited event", async () => {
+    const user = userEvent.setup();
+    localStorage.setItem("broarr-favorites", JSON.stringify(["future-1"]));
+
+    const events = [
+      createFutureEvent({ id: "future-1", title: "Konsert", category: "kultur" }),
+      createFutureEvent({ id: "future-2", title: "Fotball", category: "sport", startDate: "2099-06-21T10:00:00Z" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+    expect(screen.getByRole("heading", { name: "Favoritter" })).toBeInTheDocument();
+
+    await user.click(screen.getByRole("checkbox", { name: "Sport" }));
+
+    expect(screen.queryByRole("heading", { name: "Favoritter" })).not.toBeInTheDocument();
+  });
+
+  it("hides Favoritter section when search excludes favorited event", async () => {
+    const user = userEvent.setup();
+    localStorage.setItem("broarr-favorites", JSON.stringify(["future-1"]));
+
+    const events = [
+      createFutureEvent({ id: "future-1", title: "Konsert" }),
+    ];
+
+    render(<EventList events={events} loading={false} error={null} />);
+    expect(screen.getByRole("heading", { name: "Favoritter" })).toBeInTheDocument();
+
+    await user.type(screen.getByRole("searchbox"), "fotball");
+
+    expect(screen.queryByRole("heading", { name: "Favoritter" })).not.toBeInTheDocument();
+  });
+
+  it("hides Favoritter section after unstarring all events", async () => {
+    const user = userEvent.setup();
+    const event = createFutureEvent({ id: "1", title: "Future Event" });
+
+    render(<EventList events={[event]} loading={false} error={null} />);
+
+    await user.click(screen.getByRole("button", { name: "Legg til i favoritter" }));
+    expect(screen.getByRole("heading", { name: "Favoritter" })).toBeInTheDocument();
+
+    await user.click(screen.getAllByRole("button", { name: "Fjern fra favoritter" })[0]);
+
+    expect(screen.queryByRole("heading", { name: "Favoritter" })).not.toBeInTheDocument();
+  });
 });
 
 describe("EventList category filtering", () => {
   function createFutureEvent(overrides: Partial<Event> = {}): Event {
     return createEvent({ startDate: "2099-06-20T10:00:00Z", ...overrides });
   }
+
+  beforeEach(() => {
+    localStorage.clear();
+  });
 
   it("filters events when a category chip is clicked", async () => {
     const user = userEvent.setup();
@@ -156,6 +260,10 @@ describe("EventList search filtering", () => {
   function createFutureEvent(overrides: Partial<Event> = {}): Event {
     return createEvent({ startDate: "2099-06-20T10:00:00Z", ...overrides });
   }
+
+  beforeEach(() => {
+    localStorage.clear();
+  });
 
   it("filters events by title", async () => {
     const user = userEvent.setup();
