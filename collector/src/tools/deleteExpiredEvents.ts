@@ -8,10 +8,12 @@ export function isExpired(event: Event, now: Date = new Date()): boolean {
   return new Date(event.dateTime) < expiryThreshold;
 }
 
-export function deleteExpiredEvents(): number {
+export function deleteExpiredEvents(): void {
   const data = readEventsFile();
   const originalCount = data.events.length;
   data.events = data.events.filter((event) => !isExpired(event));
   writeEventsFile(data);
-  return originalCount - data.events.length;
+
+  const removedCount = originalCount - data.events.length;
+  console.log(removedCount > 0 ? `Removed ${removedCount} expired events.` : "No expired events found.");
 }

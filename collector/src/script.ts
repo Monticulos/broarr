@@ -6,12 +6,10 @@ import { formatEvents } from "./tools/formatEvents.js";
 import { writeEvents } from "./tools/writeEvents.js";
 import { sortEvents } from "./tools/sortEvents.js";
 import { deleteExpiredEvents } from "./tools/deleteExpiredEvents.js";
-import { runEditorAgent } from "./tools/editorAgent.js";
+import { readEventsFile } from "./tools/eventsFile.js";
 
 async function main() {
-    
   deleteSavedEvents();
-  console.log("Cleared existing events.");
     
   console.log("Starting event collection...");
 
@@ -27,22 +25,15 @@ async function main() {
     console.log(`  Extracted content from ${source.url}.`)
 
     const events = await formatEvents(source, rawText);
-    
     await writeEvents(events);
+
     console.log(`  Formatted and saved ${events.length} event(s).`);
   }
 
   sortEvents();
-  console.log("Sorted events by date.");
+  deleteExpiredEvents();
 
-  const expiredCount = deleteExpiredEvents();
-  console.log(expiredCount > 0 ? `Removed ${expiredCount} expired events.` : "No expired events found.");
-
-  console.log("Running editor agent for deduplication...");
-  const duplicateCount = await runEditorAgent();
-  console.log(duplicateCount > 0 ? `Removed ${duplicateCount} duplicate events.` : "No duplicate events found.");
-
-  console.log("Done!");
+  console.log(`Done! ${readEventsFile().events.length} events saved to file.`);
 }
 
 main().catch((error) => {

@@ -9,4 +9,5 @@ export function sortEvents(): void {
   const data = readEventsFile();
   data.events = sortByDateTime(data.events);
   writeEventsFile(data);
+  console.log("Sorted events by date.");
 }

@@ -5,10 +5,10 @@ import { ChatMistralAI } from "@langchain/mistralai";
 import { z } from "zod";
 import type { Event } from "../types.js";
 import type { Source } from "../sources.js";
+import { generateEventId } from "./generateEventId.js";
 
 const EventSchema = z.object({
-  id: z.string().describe("Unique kebab-case slug: <source-domain>-<title-slug>-<YYYY-MM-DD>"),
-  title: z.string().describe("Title as given from source html, excluding date"),
+  title: z.string().describe("Event title only. Must not contain dates, times, or weekday names"),
   description: z.string(),
   category: z.enum(["musikk", "stand-up", "kino", "annet"]),
   dateTime: z.string().describe("ISO 8601 datetime, e.g. 2026-03-07T19:00:00"),
@@ -27,7 +27,7 @@ const SYSTEM_PROMPT = readFileSync(resolve(PROMPTS_DIR, "format-events.md"), "ut
 export async function formatEvents(source: Source, rawText: string): Promise<Event[]> {
   if (!rawText) return [];
 
-  const llm = new ChatMistralAI({ model: "mistral-small-latest", temperature: 0.1 });
+  const llm = new ChatMistralAI({ model: "mistral-small-latest", temperature: 0 });
   const structuredLlm = llm.withStructuredOutput(EventsResponseSchema);
 
   const result = await structuredLlm.invoke([
@@ -38,5 +38,9 @@ export async function formatEvents(source: Source, rawText: string): Promise<Eve
     },
   ]);
 
-  return result.events as Event[];
+  return result.events.map((event) => ({
+    ...event,
+    id: generateEventId(source.name, event.dateTime),
+  })) as Event[];
 }
+

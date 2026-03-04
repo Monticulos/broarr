@@ -8,11 +8,10 @@ vi.mock("@langchain/mistralai", () => ({
       invoke: vi.fn().mockResolvedValue({
         events: [
           {
-            id: "kred-konsert-2026-03-15",
             title: "Konsert",
             description: "En konsert på Kred",
             category: "musikk",
-            dateTime: "2026-03-15T20:00:00",
+            dateTime: "2026-03-15T20:00:00Z",
             location: "Kred",
             url: "https://www.cafekred.no/arrangementer",
             collectedAt: "2026-03-01T12:00:00.000Z",
@@ -40,6 +39,7 @@ describe("formatEvents", () => {
     expect(result).toHaveLength(1);
     expect(result[0].title).toBe("Konsert");
     expect(result[0].category).toBe("musikk");
-    expect(result[0].dateTime).toBe("2026-03-15T20:00:00");
+    expect(result[0].dateTime).toBe("2026-03-15T20:00:00Z");
+    expect(result[0].id).toBe("Kred-2026-03-15T20:00:00.000Z");
   });
 });

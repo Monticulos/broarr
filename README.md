@@ -9,7 +9,7 @@ A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI co
 | Layer | Technologies |
 |-------|-------------|
 | Frontend | React 19, TypeScript, Vite, Digdir Designsystemet |
-| Collector | LangChain, LangGraph, Mistral AI, Puppeteer, Cheerio |
+| Collector | LangChain, Mistral AI, Puppeteer, Cheerio |
 | Testing | Vitest, React Testing Library |
 | CI/CD | GitHub Actions, GitHub Pages |
 
@@ -46,7 +46,7 @@ broarr/
 │   │       ├── sortEvents.ts
 │   │       ├── deleteExpiredEvents.ts
 │   │       ├── deleteSavedEvents.ts
-│   │       └── editorAgent.ts
+│   │       └── generateEventId.ts
 └── .github/workflows/
     └── deploy.yml            # GitHub Actions: build + deploy on push to main
 ```
@@ -74,7 +74,3 @@ npx tsx src/script.ts  # collect all sources and update events.json
 ```
 
 ---
-
-## Deployment
-
-Push to `main` — GitHub Actions builds the Vite app and deploys it to GitHub Pages automatically. The live site URL is shown in the repository's **Environments** tab.
