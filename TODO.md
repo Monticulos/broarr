@@ -1,6 +1,5 @@
 # High priority
 - Connect to meta events
-- Nightly runner for collector
 
 # Medium priority
 - Create workaround for type issues for DS only allowing 4 colors for badges/tags/categories
