@@ -20,7 +20,10 @@ export function truncateText(text: string): string {
 
 export async function extractEvents(source: Source): Promise<string> {
   try {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: process.env.CI ? ["--no-sandbox"] : [],
+    });
     const page = await browser.newPage();
     await page.goto(source.url, { waitUntil: "networkidle2" });
     await new Promise((resolve) => setTimeout(resolve, RENDER_WAIT_MS));

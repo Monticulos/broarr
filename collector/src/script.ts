@@ -33,10 +33,12 @@ async function main() {
   sortEvents();
   deleteExpiredEvents();
 
-  console.log(`Done! ${readEventsFile().events.length} events saved to file.`);
+  const savedEventCount = readEventsFile().events.length;
+  if (savedEventCount === 0) {
+    throw new Error("No events were collected from any source.");
+  }
+  
+  console.log(`Done! ${savedEventCount} events saved to file.`);
 }
 
-main().catch((error) => {
-  console.error("Collection failed:", error);
-  process.exit(1);
-});
+main();
