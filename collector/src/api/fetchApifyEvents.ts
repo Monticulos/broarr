@@ -26,6 +26,11 @@ export interface ApifyEvent {
   usersInterested: number;
 }
 
+export async function getValidApifyEvents(): Promise<ApifyEvent[]> {
+  const events = await fetchApifyEvents();
+  return events.filter((e) => !e.isPast);
+}
+
 export async function fetchApifyEvents(): Promise<ApifyEvent[]> {
   const apiKey = process.env.APIFY_API_KEY;
   if (!apiKey) {
