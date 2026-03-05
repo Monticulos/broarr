@@ -18,7 +18,7 @@ interface Props {
 export default function EventCard({ event, isFavorited, onToggleFavorite }: Props) {
   return (
     <Card>
-      <Card.Block className={styles.mainBlock}>
+      <Card.Block className={styles.headingBlock}>
         <div className={styles.meta}>
           <div className={styles.metaLeft}>
             <CategoryBadge category={event.category} />
@@ -40,7 +40,7 @@ export default function EventCard({ event, isFavorited, onToggleFavorite }: Prop
           </Button>
         </div>
 
-        <Heading level={2} data-size="sm">
+        <Heading level={2} data-size="sm" className={styles.heading}>
           {event.title}
         </Heading>
 
@@ -49,15 +49,17 @@ export default function EventCard({ event, isFavorited, onToggleFavorite }: Prop
             {LOCATION_ICON} {event.location}
           </Paragraph>
         )}
+      </Card.Block>
 
-        <Paragraph data-size="sm">
+      <Card.Block>
+        <Paragraph data-size="sm" className={styles.description}>
           {event.description}
         </Paragraph>
       </Card.Block>
 
       <Card.Block className={styles.footer}>
         {event.url && (
-          <Link href={event.url} target="_blank" rel="noopener noreferrer">
+          <Link data-size='sm' href={event.url} target="_blank" rel="noopener noreferrer">
             Les mer →
           </Link>
         )}

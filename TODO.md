@@ -1,9 +1,11 @@
 # High priority
-- Connect to meta events
+- Find a way to consolidate manual events and Apify events. Favorites should be preserved and duplicates deleted.
+- Make Apify fetch events periodically
 
 # Medium priority
 - Create workaround for type issues for DS only allowing 4 colors for badges/tags/categories
-- Add Quiz, Mat, Baby and Tro/livssyn categories
+- Map sted til å ikke vise adresse. Vis stedsnavn.
+- Categories should be Musikk, Kino, Quiz, Mat/drikke, Barn/ungdom, Næringsliv, Kunst/kultur, Kommunalt, Tro/livssyn, Annet categories. Remove Stand-up.
 - Evals for prompts/llm models
 - Download calendar event
 
