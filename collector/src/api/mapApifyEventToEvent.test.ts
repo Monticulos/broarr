@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { mapApifyEventToEvent } from "./mapApifyEventToEvent.js";
+import { mapApifyEventToEvent, LOCATION_MAP } from "./mapApifyEventToEvent.js";
 import { createApifyEvent } from "../test/createApifyEvent.js";
 
 vi.mock("../llm/categorizeEvent.js", () => ({
@@ -47,5 +47,36 @@ describe("mapApifyEventToEvent", () => {
     await mapApifyEventToEvent(apifyEvent);
 
     expect(categorizeEvent).toHaveBeenCalledWith("Stand-up show", "Morsomt!");
+  });
+
+  describe("mapLocation", () => {
+    it.each(Object.entries(LOCATION_MAP))(
+      "maps address '%s' to venue '%s'",
+      async (address, expectedVenue) => {
+        const apifyEvent = createApifyEvent({ location: { id: "loc1", name: address, latitude: 0, longitude: 0 } });
+
+        const result = await mapApifyEventToEvent(apifyEvent);
+
+        expect(result.location).toBe(expectedVenue);
+      }
+    );
+
+    it("maps address embedded in a longer string", async () => {
+      const apifyEvent = createApifyEvent({
+        location: { id: "loc1", name: "Storgata 70, 8900 Brønnøysund", latitude: 0, longitude: 0 },
+      });
+
+      const result = await mapApifyEventToEvent(apifyEvent);
+
+      expect(result.location).toBe(LOCATION_MAP["Storgata 70"]);
+    });
+
+    it("returns the location unchanged when no address matches", async () => {
+      const apifyEvent = createApifyEvent({ location: { id: "loc1", name: "Ukjent sted", latitude: 0, longitude: 0 } });
+
+      const result = await mapApifyEventToEvent(apifyEvent);
+
+      expect(result.location).toBe("Ukjent sted");
+    });
   });
 });
