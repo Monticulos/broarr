@@ -2,8 +2,6 @@
 
 A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI collector gathers upcoming events from local websites and publishes them as a React frontend on GitHub Pages.
 
----
-
 ## Tech stack
 
 | Layer | Technologies |
@@ -12,8 +10,6 @@ A local events aggregator for Brønnøysund, Norway. A LangChain + Mistral AI co
 | Collector | LangChain, Mistral AI, Puppeteer, Cheerio |
 | Testing | Vitest, React Testing Library |
 | CI/CD | GitHub Actions, GitHub Pages |
-
----
 
 ## Repo structure
 
@@ -43,8 +39,6 @@ broarr/
     └── lint-test.yml         # GitHub Actions: lint, typecheck and test on push and pull requests
 ```
 
----
-
 ## Running the frontend locally
 
 ```bash
@@ -54,8 +48,6 @@ npm run web
 
 The site is served at `http://localhost:5173`.
 
----
-
 ## Running the collector
 
 ```bash
@@ -63,11 +55,3 @@ cp collector/.env.example collector/.env   # add your api keys
 npm run setup
 npm run collector
 ```
-
----
-
-## Collector error handling
-
-Individual source failures (collecting or LLM formatting) are logged as warnings and skipped — collection continues with remaining sources. The run throws at the end if either the manual collecting or Apify pipeline produced zero events, preventing an empty `events.json` from being published.
-
----
