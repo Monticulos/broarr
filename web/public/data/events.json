@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-06T18:43:38.835Z",
+  "updatedAt": "2026-03-07T04:21:27.657Z",
   "events": [
     {
       "title": "Operasjon Bever",
@@ -8,28 +8,18 @@
       "dateTime": "2026-03-06T18:00:00",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "collectedAt": "2026-03-06T18:42:08.881Z",
-      "id": "Brønnøy-kino-2026-03-06T17:00:00.000Z"
-    },
-    {
-      "title": "Kvinnenes internasjonale bønnedag",
-      "description": "Kvinnenes internasjonale bønnedag",
-      "category": "tro-og-livssyn",
-      "dateTime": "2026-03-06T18:00:00",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-06T17:00:00.000Z"
+      "collectedAt": "2026-03-07T04:19:42.307Z",
+      "id": "Brønnøy-kino-2026-03-06T18:00:00.000Z"
     },
     {
       "title": "Lørdagskafé",
-      "description": "Lørdagskafé",
+      "description": "Lørdag 07.03 kl.12.00 Lørdagskafé Kefas",
       "category": "mat-og-drikke",
       "dateTime": "2026-03-07T12:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-07T11:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-03-07T12:00:00.000Z"
     },
     {
       "id": "2124299738364179",
@@ -39,37 +29,47 @@
       "dateTime": "2026-03-07T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/2124299738364179/",
-      "collectedAt": "2026-03-06T18:43:38.835Z"
+      "collectedAt": "2026-03-07T04:21:27.656Z"
+    },
+    {
+      "title": "MusikkBingo",
+      "description": "Vi er på senvinteren og venter fortsatt på våren. Hva passer bedre nå på kaldeste vinteren enn å ta turen innom og være med på Kred's Musikk-Bingo! Temaene er ikke bestemt enda, men det blir gøy uansett.",
+      "category": "musikk",
+      "dateTime": "2026-03-07T21:00:00",
+      "location": "Cafekred",
+      "url": "https://www.cafekred.no/arrangementer",
+      "collectedAt": "2026-03-07T04:19:53.693Z",
+      "id": "Kred-2026-03-07T21:00:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Søndag 08.03 kl.18.00 Gudstjeneste Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-08T18:00:00",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-08T17:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-03-08T18:00:00.000Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
-      "dateTime": "2026-03-10T11:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
+      "dateTime": "2026-03-10T10:00:00",
+      "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-06T18:42:41.354Z",
+      "collectedAt": "2026-03-07T04:20:14.652Z",
       "id": "Brønnøy-bibliotek-2026-03-10T10:00:00.000Z"
     },
     {
       "title": "Åpent folkemøte om områderegulering for Brønnøy Kalk",
-      "description": "Helgeland Museum i Velfjord 10. mars kl. 18.00–20.00",
+      "description": "Helgeland Museum i Velfjord",
       "category": "kommunalt",
       "dateTime": "2026-03-10T18:00:00",
       "location": "Brønnøy kommune",
       "url": "https://www.bronnoy.kommune.no/",
-      "collectedAt": "2026-03-06T18:42:01.045Z",
-      "id": "Brønnøy-kommune-2026-03-10T17:00:00.000Z"
+      "collectedAt": "2026-03-07T04:19:34.417Z",
+      "id": "Brønnøy-kommune-2026-03-10T18:00:00.000Z"
     },
     {
       "title": "Operasjon Bever",
@@ -78,8 +78,8 @@
       "dateTime": "2026-03-10T18:00:00",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "collectedAt": "2026-03-06T18:42:08.881Z",
-      "id": "Brønnøy-kino-2026-03-10T17:00:00.000Z"
+      "collectedAt": "2026-03-07T04:19:42.307Z",
+      "id": "Brønnøy-kino-2026-03-10T18:00:00.000Z"
     },
     {
       "title": "Wuthering Heights",
@@ -88,18 +88,28 @@
       "dateTime": "2026-03-10T20:00:00",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "collectedAt": "2026-03-06T18:42:08.881Z",
-      "id": "Brønnøy-kino-2026-03-10T19:00:00.000Z"
+      "collectedAt": "2026-03-07T04:19:42.307Z",
+      "id": "Brønnøy-kino-2026-03-10T20:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 11.03 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-11T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-11T10:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-03-11T11:00:00.000Z"
+    },
+    {
+      "title": "Diktkveld med forfatter Ola-Jørn Tilrem",
+      "description": "Diktkveld med forfatter Ola-Jørn Tilrem",
+      "category": "kunst-og-kultur",
+      "dateTime": "2026-03-11T17:00:00",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/",
+      "collectedAt": "2026-03-07T04:20:14.652Z",
+      "id": "Brønnøy-bibliotek-2026-03-11T17:00:00.000Z"
     },
     {
       "id": "1240506438009961",
@@ -109,17 +119,7 @@
       "dateTime": "2026-03-11T17:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1240506438009961/",
-      "collectedAt": "2026-03-06T18:43:36.437Z"
-    },
-    {
-      "title": "Diktkveld med forfatter Ola-Jørn Tilrem",
-      "description": "Diktkveld med forfatter Ola-Jørn Tilrem",
-      "category": "kunst-og-kultur",
-      "dateTime": "2026-03-11T18:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-06T18:42:41.354Z",
-      "id": "Brønnøy-bibliotek-2026-03-11T17:00:00.000Z"
+      "collectedAt": "2026-03-07T04:21:24.108Z"
     },
     {
       "id": "4463441877217520",
@@ -129,7 +129,7 @@
       "dateTime": "2026-03-11T19:00:00.000Z",
       "location": "Den andre puben",
       "url": "https://www.facebook.com/events/4463441877217520/",
-      "collectedAt": "2026-03-06T18:43:35.329Z"
+      "collectedAt": "2026-03-07T04:21:22.338Z"
     },
     {
       "title": "Hamnet",
@@ -138,8 +138,8 @@
       "dateTime": "2026-03-11T20:00:00",
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
-      "collectedAt": "2026-03-06T18:42:08.881Z",
-      "id": "Brønnøy-kino-2026-03-11T19:00:00.000Z"
+      "collectedAt": "2026-03-07T04:19:42.307Z",
+      "id": "Brønnøy-kino-2026-03-11T20:00:00.000Z"
     },
     {
       "id": "1613391163248701",
@@ -149,7 +149,7 @@
       "dateTime": "2026-03-12T14:00:00.000Z",
       "location": "Brønnøysund videregående skole",
       "url": "https://www.facebook.com/events/1613391163248701/",
-      "collectedAt": "2026-03-06T18:43:34.792Z"
+      "collectedAt": "2026-03-07T04:21:21.355Z"
     },
     {
       "id": "26225559823797002",
@@ -159,7 +159,7 @@
       "dateTime": "2026-03-12T14:15:00.000Z",
       "location": "Brønnøysund videregående skole",
       "url": "https://www.facebook.com/events/26225559823797002/",
-      "collectedAt": "2026-03-06T18:43:36.724Z"
+      "collectedAt": "2026-03-07T04:21:24.457Z"
     },
     {
       "id": "761700400299768",
@@ -169,7 +169,7 @@
       "dateTime": "2026-03-12T18:00:00.000Z",
       "location": "Forsamlingslokalet Brønnøysund",
       "url": "https://www.facebook.com/events/761700400299768/",
-      "collectedAt": "2026-03-06T18:43:30.957Z"
+      "collectedAt": "2026-03-07T04:21:16.630Z"
     },
     {
       "id": "1399574978328624",
@@ -179,17 +179,27 @@
       "dateTime": "2026-03-12T19:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1399574978328624/",
-      "collectedAt": "2026-03-06T18:43:33.685Z"
+      "collectedAt": "2026-03-07T04:21:20.101Z"
+    },
+    {
+      "title": "AllmenQuiz",
+      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert. Quizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før. Det blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.",
+      "category": "quiz",
+      "dateTime": "2026-03-12T20:00:00",
+      "location": "Cafekred",
+      "url": "https://www.cafekred.no/arrangementer",
+      "collectedAt": "2026-03-07T04:19:53.693Z",
+      "id": "Kred-2026-03-12T20:00:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Søndag 15.03 kl.11.00 Gudstjeneste Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-15T11:00:00",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-15T10:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-03-15T11:00:00.000Z"
     },
     {
       "id": "2129729637781721",
@@ -199,16 +209,16 @@
       "dateTime": "2026-03-17T09:00:00.000Z",
       "location": "Kefas, Dr.Møllersgata 2, 8900 Brønnøysund",
       "url": "https://www.facebook.com/events/2129729637781721/",
-      "collectedAt": "2026-03-06T18:43:38.541Z"
+      "collectedAt": "2026-03-07T04:21:27.232Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
-      "dateTime": "2026-03-17T11:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
+      "dateTime": "2026-03-17T10:00:00",
+      "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-06T18:42:41.354Z",
+      "collectedAt": "2026-03-07T04:20:14.652Z",
       "id": "Brønnøy-bibliotek-2026-03-17T10:00:00.000Z"
     },
     {
@@ -219,7 +229,7 @@
       "dateTime": "2026-03-17T16:00:00.000Z",
       "location": "Kefas, Dr.Møllers gt 2, 8900 Brønnøysund",
       "url": "https://www.facebook.com/events/1474715997583350/",
-      "collectedAt": "2026-03-06T18:43:37.516Z"
+      "collectedAt": "2026-03-07T04:21:26.023Z"
     },
     {
       "id": "1290807762936378",
@@ -229,17 +239,17 @@
       "dateTime": "2026-03-17T18:00:00.000Z",
       "location": "Storgata 51, 8900 Brønnøysund, Norge",
       "url": "https://www.facebook.com/events/1290807762936378/",
-      "collectedAt": "2026-03-06T18:43:35.694Z"
+      "collectedAt": "2026-03-07T04:21:22.965Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 18.03 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-18T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-18T10:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-03-18T11:00:00.000Z"
     },
     {
       "id": "1400890462144393",
@@ -249,17 +259,27 @@
       "dateTime": "2026-03-18T11:00:00.000Z",
       "location": "Storgata 51, 8900 Brønnøysund, Norge",
       "url": "https://www.facebook.com/events/1400890462144393/",
-      "collectedAt": "2026-03-06T18:43:35.062Z"
+      "collectedAt": "2026-03-07T04:21:21.812Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 19.03 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-19T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-19T10:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-03-19T11:30:00.000Z"
+    },
+    {
+      "title": "Formiddagsfilmen: LOOP (2005)",
+      "description": "Formiddagsfilmen: LOOP (2005)",
+      "category": "kino",
+      "dateTime": "2026-03-19T12:00:00",
+      "location": "Brønnøy bibliotek",
+      "url": "https://bronnoybibliotek.no/arrangementer#/",
+      "collectedAt": "2026-03-07T04:20:14.652Z",
+      "id": "Brønnøy-bibliotek-2026-03-19T12:00:00.000Z"
     },
     {
       "id": "1640615373946004",
@@ -269,17 +289,7 @@
       "dateTime": "2026-03-19T12:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1640615373946004/",
-      "collectedAt": "2026-03-06T18:43:36.161Z"
-    },
-    {
-      "title": "Formiddagsfilmen: LOOP (2005)",
-      "description": "Formiddagsfilmen: LOOP (2005)",
-      "category": "kino",
-      "dateTime": "2026-03-19T13:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
-      "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-06T18:42:41.354Z",
-      "id": "Brønnøy-bibliotek-2026-03-19T12:00:00.000Z"
+      "collectedAt": "2026-03-07T04:21:23.689Z"
     },
     {
       "id": "1592827455088754",
@@ -289,7 +299,17 @@
       "dateTime": "2026-03-20T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1592827455088754/",
-      "collectedAt": "2026-03-06T18:43:36.960Z"
+      "collectedAt": "2026-03-07T04:21:25.248Z"
+    },
+    {
+      "title": "Mat og Vinkveld med Erik Strugstad",
+      "description": "Kred arrangerer en spennende mat og vinkveld med sommelier Erik Strugstad. Kom og lær litt om vin, samtidig som du får deg et godt maltid. Ingen forkunnskaper om vin er nødvendig, her skal vi bare nyte og kose oss.",
+      "category": "mat-og-drikke",
+      "dateTime": "2026-03-20T19:00:00",
+      "location": "Cafekred",
+      "url": "https://www.cafekred.no/arrangementer",
+      "collectedAt": "2026-03-07T04:19:53.693Z",
+      "id": "Kred-2026-03-20T19:00:00.000Z"
     },
     {
       "id": "803770719136708",
@@ -299,37 +319,37 @@
       "dateTime": "2026-03-20T19:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/803770719136708/",
-      "collectedAt": "2026-03-06T18:43:32.605Z"
+      "collectedAt": "2026-03-07T04:21:18.624Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Søndag 22.03 kl.11.00 Gudstjeneste Gudstjeneste - Brønnøy kirke",
       "category": "tro-og-livssyn",
       "dateTime": "2026-03-22T11:00:00",
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-22T10:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-03-22T11:00:00.000Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
-      "dateTime": "2026-03-24T11:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
+      "dateTime": "2026-03-24T10:00:00",
+      "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-06T18:42:41.354Z",
+      "collectedAt": "2026-03-07T04:20:14.652Z",
       "id": "Brønnøy-bibliotek-2026-03-24T10:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 25.03 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-03-25T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-03-25T10:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-03-25T11:00:00.000Z"
     },
     {
       "id": "866619559201849",
@@ -339,7 +359,7 @@
       "dateTime": "2026-03-25T17:00:00.000Z",
       "location": "Brønnøy Frivilligsentral",
       "url": "https://www.facebook.com/events/866619559201849/",
-      "collectedAt": "2026-03-06T18:43:31.561Z"
+      "collectedAt": "2026-03-07T04:21:17.455Z"
     },
     {
       "id": "1236021581994607",
@@ -349,7 +369,7 @@
       "dateTime": "2026-03-26T10:00:00.000Z",
       "location": "Felleskjøpet",
       "url": "https://www.facebook.com/events/1236021581994607/",
-      "collectedAt": "2026-03-06T18:43:38.243Z"
+      "collectedAt": "2026-03-07T04:21:26.864Z"
     },
     {
       "id": "1535081147792962",
@@ -359,7 +379,17 @@
       "dateTime": "2026-03-27T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1535081147792962/",
-      "collectedAt": "2026-03-06T18:43:37.282Z"
+      "collectedAt": "2026-03-07T04:21:25.621Z"
+    },
+    {
+      "title": "Christer Torjussen: Stand Up Spesial",
+      "description": "Velkommen til en kveld med en av landets mest rutinerte komikere! Christer er en veteran i humorfaget med over 25 års fartstid på standupscenen og har treffsikker humor, høy gjenkjennelsesfaktor og en god porsjon selvironi som varemerke. Som en anmelder skriver: Torjussen er den rene mitraljøsen, og poengene renner ut i raskt tempo!",
+      "category": "kommunalt",
+      "dateTime": "2026-03-27T21:00:00",
+      "location": "Cafekred",
+      "url": "https://www.cafekred.no/arrangementer",
+      "collectedAt": "2026-03-07T04:19:53.693Z",
+      "id": "Kred-2026-03-27T21:00:00.000Z"
     },
     {
       "id": "26192453483722736",
@@ -369,57 +399,57 @@
       "dateTime": "2026-03-28T21:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/26192453483722736/",
-      "collectedAt": "2026-03-06T18:43:35.937Z"
+      "collectedAt": "2026-03-07T04:21:23.306Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
-      "dateTime": "2026-03-31T11:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
+      "dateTime": "2026-03-31T09:00:00",
+      "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-06T18:42:41.354Z",
+      "collectedAt": "2026-03-07T04:20:14.652Z",
       "id": "Brønnøy-bibliotek-2026-03-31T09:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 01.04 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-04-01T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-04-01T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-04-01T11:00:00.000Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
-      "dateTime": "2026-04-07T11:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
+      "dateTime": "2026-04-07T09:00:00",
+      "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-06T18:42:41.354Z",
+      "collectedAt": "2026-03-07T04:20:14.652Z",
       "id": "Brønnøy-bibliotek-2026-04-07T09:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 08.04 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-04-08T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-04-08T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-04-08T11:00:00.000Z"
     },
     {
       "title": "Lørdagskafé",
-      "description": "Lørdagskafé",
+      "description": "Lørdag 11.04 kl.12.00 Lørdagskafé Kefas",
       "category": "mat-og-drikke",
       "dateTime": "2026-04-11T12:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-04-11T10:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-04-11T12:00:00.000Z"
     },
     {
       "id": "1214003247388441",
@@ -429,37 +459,37 @@
       "dateTime": "2026-04-11T17:00:00.000Z",
       "location": "FORSAMLINGSLOKALET - Brønnøysund",
       "url": "https://www.facebook.com/events/1214003247388441/",
-      "collectedAt": "2026-03-06T18:43:31.867Z"
+      "collectedAt": "2026-03-07T04:21:17.834Z"
     },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
-      "dateTime": "2026-04-14T11:00:00",
-      "location": "Brønnøy bibliotek Brønnøysund",
+      "dateTime": "2026-04-14T09:00:00",
+      "location": "Brønnøy bibliotek",
       "url": "https://bronnoybibliotek.no/arrangementer#/",
-      "collectedAt": "2026-03-06T18:42:41.354Z",
+      "collectedAt": "2026-03-07T04:20:14.652Z",
       "id": "Brønnøy-bibliotek-2026-04-14T09:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 15.04 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-04-15T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-04-15T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-04-15T11:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 22.04 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-04-22T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-04-22T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-04-22T11:00:00.000Z"
     },
     {
       "id": "1442826520606132",
@@ -469,27 +499,47 @@
       "dateTime": "2026-04-24T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1442826520606132/",
-      "collectedAt": "2026-03-06T18:43:33.926Z"
+      "collectedAt": "2026-03-07T04:21:20.539Z"
+    },
+    {
+      "title": "Dr. Bergland - på liv og død",
+      "description": "Ventetiden er over, Dr. Bergland er endelig klar med ny forestilling! I løpet av de siste årene har Jonas Kinge Bergland etablert seg som en av landets største og mest populære komikere. Siden brakdebuten \"Dr. Bergland og den alternative medisin\" i 2016 har han levert intelligent, kompromissløs og etter eget utsagn \"helt brukbar\" standup, for et stadig større publikum og begeistrede anmeldere.",
+      "category": "kommunalt",
+      "dateTime": "2026-04-24T19:00:00",
+      "location": "Cafekred",
+      "url": "https://www.cafekred.no/arrangementer",
+      "collectedAt": "2026-03-07T04:19:53.693Z",
+      "id": "Kred-2026-04-24T19:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 29.04 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-04-29T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-04-29T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-04-29T11:00:00.000Z"
+    },
+    {
+      "title": "Gudstjeneste",
+      "description": "Torsdag 30.04 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
+      "category": "tro-og-livssyn",
+      "dateTime": "2026-04-30T11:30:00",
+      "location": "Brønnøy kirke",
+      "url": "https://www.bronnoy.kirken.no/Kalender",
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-04-30T11:30:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 06.05 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-05-06T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-05-06T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-05-06T11:00:00.000Z"
     },
     {
       "id": "1282744197015164",
@@ -499,17 +549,17 @@
       "dateTime": "2026-05-08T16:00:00.000Z",
       "location": "Brønnøysund",
       "url": "https://www.facebook.com/events/1282744197015164/",
-      "collectedAt": "2026-03-06T18:43:32.853Z"
+      "collectedAt": "2026-03-07T04:21:18.981Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 13.05 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-05-13T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-05-13T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-05-13T11:00:00.000Z"
     },
     {
       "id": "1584031199293294",
@@ -519,77 +569,87 @@
       "dateTime": "2026-05-15T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1584031199293294/",
-      "collectedAt": "2026-03-06T18:43:33.423Z"
+      "collectedAt": "2026-03-07T04:21:19.756Z"
+    },
+    {
+      "title": "Ole Soo & Nils-Ingar Aadne",
+      "description": "To av Norges mest populære og morsomste komikere skal ut på veien for å teste nytt materiale. Når nye vitser skal prøves, kan alt skje – og det eneste som er sikkert, er at det blir morsomt! Enten så ler du med dem eller av dem!",
+      "category": "kommunalt",
+      "dateTime": "2026-05-15T19:00:00",
+      "location": "Cafekred",
+      "url": "https://www.cafekred.no/arrangementer",
+      "collectedAt": "2026-03-07T04:19:53.693Z",
+      "id": "Kred-2026-05-15T19:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 20.05 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-05-20T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-05-20T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-05-20T11:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 27.05 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-05-27T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-05-27T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-05-27T11:00:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 28.05 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-05-28T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-05-28T09:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-05-28T11:30:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 03.06 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-06-03T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-06-03T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-06-03T11:00:00.000Z"
     },
     {
       "title": "Lørdagskafé",
-      "description": "Lørdagskafé",
+      "description": "Lørdag 06.06 kl.12.00 Lørdagskafé Kefas",
       "category": "mat-og-drikke",
       "dateTime": "2026-06-06T12:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-06-06T10:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-06-06T12:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 10.06 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-06-10T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-06-10T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-06-10T11:00:00.000Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
-      "description": "Trille-Tralle-Treff (babysang)",
+      "description": "Onsdag 17.06 kl.11.00 Trille-Tralle-Treff (babysang) Barn og unge - Kefas",
       "category": "barn-og-ungdom",
       "dateTime": "2026-06-17T11:00:00",
-      "location": "Kefas",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-06-17T09:00:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-06-17T11:00:00.000Z"
     },
     {
       "id": "1355561149693604",
@@ -599,17 +659,17 @@
       "dateTime": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-03-06T18:43:32.350Z"
+      "collectedAt": "2026-03-07T04:21:18.239Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 25.06 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-06-25T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-06-25T09:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-06-25T11:30:00.000Z"
     },
     {
       "id": "1518436712711995",
@@ -619,37 +679,37 @@
       "dateTime": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-03-06T18:43:33.125Z"
+      "collectedAt": "2026-03-07T04:21:19.340Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 30.07 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-07-30T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-07-30T09:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-07-30T11:30:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 27.08 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-08-27T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-08-27T09:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-08-27T11:30:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 24.09 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-09-24T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-09-24T09:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-09-24T11:30:00.000Z"
     },
     {
       "id": "1160245412989516",
@@ -659,7 +719,7 @@
       "dateTime": "2026-10-02T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1160245412989516/",
-      "collectedAt": "2026-03-06T18:43:37.805Z"
+      "collectedAt": "2026-03-07T04:21:26.507Z"
     },
     {
       "id": "1982982558926487",
@@ -669,37 +729,47 @@
       "dateTime": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1982982558926487/",
-      "collectedAt": "2026-03-06T18:43:34.262Z"
+      "collectedAt": "2026-03-07T04:21:20.939Z"
+    },
+    {
+      "title": "Espen Abrahamsen - Avantgarde",
+      "description": "Espen Abrahamsen er endelig klar med sitt første helaftens standupshow. Du kjenner ham fra TV og podkaster, men det er på scenen Espen virkelig briljerer. Siden debuten på standupscenen i 2020 har målet vært klart, et eget show og en Norgesturné.",
+      "category": "kommunalt",
+      "dateTime": "2026-10-10T19:00:00",
+      "location": "Cafekred",
+      "url": "https://www.cafekred.no/arrangementer",
+      "collectedAt": "2026-03-07T04:19:53.693Z",
+      "id": "Kred-2026-10-10T19:00:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 29.10 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-10-29T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-10-29T10:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-10-29T11:30:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 26.11 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-11-26T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-11-26T10:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-11-26T11:30:00.000Z"
     },
     {
       "title": "Gudstjeneste",
-      "description": "Gudstjeneste",
+      "description": "Torsdag 31.12 kl.11.30 Gudstjeneste Gudstjeneste - Sykehjemmets kapell",
       "category": "tro-og-livssyn",
       "dateTime": "2026-12-31T11:30:00",
-      "location": "Sykehjemmets kapell",
+      "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalender",
-      "collectedAt": "2026-03-06T18:43:16.896Z",
-      "id": "Brønnøy-kirke-2026-12-31T10:30:00.000Z"
+      "collectedAt": "2026-03-07T04:20:59.705Z",
+      "id": "Brønnøy-kirke-2026-12-31T11:30:00.000Z"
     }
   ]
 }
