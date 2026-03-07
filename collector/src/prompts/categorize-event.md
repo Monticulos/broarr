@@ -5,7 +5,7 @@ Given an event title and description, assign one of the following categories:
 - "musikk" — concerts, live music, music festivals, rootsfestivalen, band performances, choir and song events
 - "kino" — cinema screenings, film showings, movie nights
 - "quiz" — pub quizzes, trivia nights, quiz competitions, music bingos
-- "mat-og-drikke" — food festivals, tastings, restaurant events, brewery tours, dinner events
+- "mat-og-drikke" — food festivals, tastings, restaurant events, brewery tours, café events
 - "barn-og-ungdom" — children's events, youth activities, family-friendly activities, school events
 - "næringsliv" — business networking, trade fairs, professional seminars, entrepreneur events, retail sales and store events
 - "kunst-og-kultur" — theatre, exhibitions, art shows, cultural performances, stand-up, dance, opera, literary events
