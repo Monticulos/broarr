@@ -1,7 +1,7 @@
 import { APIFY_BASE_URL, getApifyApiKey } from "./apifyConfig.js";
 
 const FACEBOOK_EVENTS_ACTOR_ID = "UZBnerCFBo5FgGouO";
-const BRONNØYSUND_LOCATION_ID = "103758419663407";
+const BRONNOEYSUND_LOCATION_ID = "103758419663407";
 const DISCOVERY_DATE_RANGE_MONTHS = 6;
 const MAX_EVENTS = 40;
 const POLL_INTERVAL_MS = 10_000;
@@ -31,7 +31,7 @@ function buildSearchFilters(startDate: Date, endDate: Date): string {
   const filters = {
     "rp_events_location:0": JSON.stringify({
       name: "filter_events_location",
-      args: BRONNØYSUND_LOCATION_ID,
+      args: BRONNOEYSUND_LOCATION_ID,
     }),
     "filter_events_date_range:0": JSON.stringify({
       name: "filter_events_date",
@@ -53,7 +53,7 @@ export function buildFacebookSearchUrl(
   return `https://www.facebook.com/events/search?q=Brønnøysund&filters=${filters}`;
 }
 
-export async function startApifyActorRun(): Promise<void> {
+export async function startApifyActorRun(): Promise<string> {
   const apiKey = getApifyApiKey();
   const discoveryUrl = buildFacebookSearchUrl();
   const url = `${APIFY_BASE_URL}/acts/${FACEBOOK_EVENTS_ACTOR_ID}/runs?token=${apiKey}&timeout=${ACTOR_TIMEOUT_SECONDS}`;
@@ -75,6 +75,7 @@ export async function startApifyActorRun(): Promise<void> {
 
   const result = (await response.json()) as ActorRunResponse;
   console.log(`Apify actor run started (ID: ${result.data.id})`);
+  return result.data.id;
 }
 
 export async function waitForActorRun(runId: string): Promise<string> {
@@ -84,7 +85,6 @@ export async function waitForActorRun(runId: string): Promise<string> {
   let datasetId = "";
 
   while (Date.now() - startTime < MAX_WAIT_MS) {
-    console.log("Waiting for Apify actor run to complete...");
     const response = await fetch(url);
 
     if (!response.ok) {
@@ -106,10 +106,11 @@ export async function waitForActorRun(runId: string): Promise<string> {
       throw new Error(`Apify actor run failed with status: ${status}`);
     }
 
+    console.log("Waiting for Apify actor run to complete...");
     await sleep(POLL_INTERVAL_MS);
   }
 
-  console.warn(`Did not recieve expected actor response after ${COLLECTOR_POLL_TIMEOUT_SECONDS}s.`);
+  console.warn(`Did not receive expected actor response after ${COLLECTOR_POLL_TIMEOUT_SECONDS}s.`);
   return datasetId;
 }
 

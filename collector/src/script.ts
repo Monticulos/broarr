@@ -67,15 +67,15 @@ async function main() {
 
   if (runApify) {
     console.log("Starting Apify actor run...");
-    await startApifyActorRun();
+    runId = await startApifyActorRun();
   } else {
     console.log("Skipping Apify today. Previous events preserved.");
   }
 
   const puppeteerEventCount = await collectPuppeteerEvents();
 
-  if (runApify) {
-    const datasetId = await waitForActorRun(runId!);
+  if (runApify && runId) {
+    const datasetId = await waitForActorRun(runId);
     apifyEventCount = await collectApifyEvents(datasetId);
   }
 
