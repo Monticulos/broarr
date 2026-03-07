@@ -3,12 +3,14 @@ import { APIFY_BASE_URL, getApifyApiKey } from "./apifyConfig.js";
 const FACEBOOK_EVENTS_ACTOR_ID = "UZBnerCFBo5FgGouO";
 const BRONNØYSUND_LOCATION_ID = "103758419663407";
 const DISCOVERY_DATE_RANGE_MONTHS = 6;
-const POLL_INTERVAL_MS = 10_000;
-const ACTOR_TIMEOUT_SECONDS = 300;
 const MAX_EVENTS = 40;
-const MAX_WAIT_MS = ACTOR_TIMEOUT_SECONDS * 1000;
+const POLL_INTERVAL_MS = 10_000;
+const ACTOR_TIMEOUT_SECONDS = 240;
+const COLLECTOR_POLL_TIMEOUT_SECONDS = ACTOR_TIMEOUT_SECONDS + 10;
+export const MAX_WAIT_MS = COLLECTOR_POLL_TIMEOUT_SECONDS * 1000;
 
-enum ActorRunStatus {
+export enum ActorRunStatus {
+  RUNNING = "RUNNING",
   SUCCEEDED = "SUCCEEDED",
   FAILED = "FAILED",
   ABORTED = "ABORTED",
@@ -79,6 +81,7 @@ export async function waitForActorRun(runId: string): Promise<string> {
   const apiKey = getApifyApiKey();
   const url = `${APIFY_BASE_URL}/actor-runs/${runId}?token=${apiKey}`;
   const startTime = Date.now();
+  let datasetId = "";
 
   while (Date.now() - startTime < MAX_WAIT_MS) {
     const response = await fetch(url);
@@ -91,9 +94,10 @@ export async function waitForActorRun(runId: string): Promise<string> {
 
     const result = (await response.json()) as ActorRunResponse;
     const { status, defaultDatasetId } = result.data;
+    datasetId = defaultDatasetId;
 
     if (status === ActorRunStatus.SUCCEEDED || status === ActorRunStatus.TIMED_OUT) {
-      return defaultDatasetId;
+      return datasetId;
     }
 
     if (status === ActorRunStatus.FAILED || status === ActorRunStatus.ABORTED) {
@@ -103,9 +107,8 @@ export async function waitForActorRun(runId: string): Promise<string> {
     await sleep(POLL_INTERVAL_MS);
   }
 
-  throw new Error(
-    `Apify actor run timed out after ${ACTOR_TIMEOUT_SECONDS} seconds.`
-  );
+  console.warn(`Did not recieve expected actor response after ${COLLECTOR_POLL_TIMEOUT_SECONDS}s.`);
+  return datasetId;
 }
 
 function sleep(ms: number): Promise<void> {

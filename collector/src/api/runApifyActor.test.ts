@@ -3,15 +3,17 @@ import {
   buildFacebookSearchUrl,
   startApifyActorRun,
   waitForActorRun,
+  ActorRunStatus,
+  MAX_WAIT_MS,
 } from "./runApifyActor.js";
 
 function createRunResponse(
-  overrides: Partial<{ id: string; status: string; defaultDatasetId: string }> = {}
+  overrides: Partial<{ id: string; status: ActorRunStatus; defaultDatasetId: string }> = {}
 ) {
   return {
     data: {
       id: "run-123",
-      status: "RUNNING",
+      status: ActorRunStatus.RUNNING,
       defaultDatasetId: "dataset-456",
       ...overrides,
     },
@@ -97,7 +99,7 @@ describe("startApifyActorRun", () => {
     await startApifyActorRun();
 
     const calledUrl = mockFetch.mock.calls[0][0] as string;
-    expect(calledUrl).toContain("timeout=300");
+    expect(calledUrl).toContain("timeout=240");
   });
 
   it("throws when APIFY_API_KEY is missing", async () => {
@@ -131,7 +133,7 @@ describe("waitForActorRun", () => {
 
   it("returns dataset ID when run succeeds immediately", async () => {
     const mockFetch = mockFetchJson(
-      createRunResponse({ status: "SUCCEEDED", defaultDatasetId: "ds-789" })
+      createRunResponse({ status: ActorRunStatus.SUCCEEDED, defaultDatasetId: "ds-789" })
     );
     vi.stubGlobal("fetch", mockFetch);
 
@@ -144,7 +146,7 @@ describe("waitForActorRun", () => {
     let callCount = 0;
     const mockFetch = vi.fn().mockImplementation(() => {
       callCount++;
-      const status = callCount >= 3 ? "SUCCEEDED" : "RUNNING";
+      const status = callCount >= 3 ? ActorRunStatus.SUCCEEDED : ActorRunStatus.RUNNING;
       return Promise.resolve({
         ok: true,
         json: () =>
@@ -165,7 +167,7 @@ describe("waitForActorRun", () => {
   });
 
   it("throws when the run fails", async () => {
-    const mockFetch = mockFetchJson(createRunResponse({ status: "FAILED" }));
+    const mockFetch = mockFetchJson(createRunResponse({ status: ActorRunStatus.FAILED }));
     vi.stubGlobal("fetch", mockFetch);
 
     await expect(waitForActorRun("run-123")).rejects.toThrow(
@@ -175,7 +177,7 @@ describe("waitForActorRun", () => {
 
   it("returns dataset ID when run times out on Apify side", async () => {
     const mockFetch = mockFetchJson(
-      createRunResponse({ status: "TIMED-OUT", defaultDatasetId: "ds-partial" })
+      createRunResponse({ status: ActorRunStatus.TIMED_OUT, defaultDatasetId: "ds-partial" })
     );
     vi.stubGlobal("fetch", mockFetch);
 
@@ -185,7 +187,7 @@ describe("waitForActorRun", () => {
   });
 
   it("throws when the run is aborted", async () => {
-    const mockFetch = mockFetchJson(createRunResponse({ status: "ABORTED" }));
+    const mockFetch = mockFetchJson(createRunResponse({ status: ActorRunStatus.ABORTED }));
     vi.stubGlobal("fetch", mockFetch);
 
     await expect(waitForActorRun("run-123")).rejects.toThrow(
@@ -202,26 +204,18 @@ describe("waitForActorRun", () => {
     );
   });
 
-  it("throws on timeout", async () => {
+  it("returns partial dataset when collector polling times out", async () => {
     const mockFetch = vi.fn().mockImplementation(() =>
       Promise.resolve({
         ok: true,
-        json: () => Promise.resolve(createRunResponse({ status: "RUNNING" })),
+        json: () => Promise.resolve(createRunResponse({ status: ActorRunStatus.RUNNING, defaultDatasetId: "ds-partial" })),
       })
     );
     vi.stubGlobal("fetch", mockFetch);
 
-    const promise = waitForActorRun("run-123").catch((e) => e);
-
-    // Advance past the 5 minute timeout
-    for (let i = 0; i < 31; i++) {
-      await vi.advanceTimersByTimeAsync(10_000);
-    }
-
-    const error = await promise;
-    expect(error).toBeInstanceOf(Error);
-    expect((error as Error).message).toBe(
-      "Apify actor run timed out after 300 seconds."
-    );
+    const promise = waitForActorRun("run-123");
+    await vi.advanceTimersByTimeAsync(MAX_WAIT_MS);
+    const datasetId = await promise;
+    expect(datasetId).toBe("ds-partial");
   });
 });
