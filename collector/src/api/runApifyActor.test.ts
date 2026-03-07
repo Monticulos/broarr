@@ -60,7 +60,7 @@ describe("buildFacebookSearchUrl", () => {
     const dateFilter = JSON.parse(filters["filter_events_date_range:0"]);
 
     expect(dateFilter.name).toBe("filter_events_date");
-    expect(dateFilter.args).toBe("2026-03-07~2026-09-06");
+    expect(dateFilter.args).toBe("2026-03-07~2026-09-07");
   });
 });
 

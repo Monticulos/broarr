@@ -44,7 +44,7 @@ export function buildFacebookSearchUrl(
   startDate: Date = new Date()
 ): string {
   const endDate = new Date(startDate);
-  endDate.setMonth(endDate.getMonth() + DISCOVERY_DATE_RANGE_MONTHS);
+  endDate.setUTCMonth(endDate.getUTCMonth() + DISCOVERY_DATE_RANGE_MONTHS);
 
   const filters = buildSearchFilters(startDate, endDate);
 
