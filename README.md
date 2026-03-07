@@ -25,6 +25,7 @@ broarr/
 │   │   └── events.json       # Generated event data consumed by the frontend
 │   └── src/
 │       ├── components/
+│       ├── constants/
 │       ├── hooks/
 │       └── utils/
 ├── collector/                # Node.js collection script
@@ -34,9 +35,12 @@ broarr/
 │       ├── prompts/          # Markdown prompts for LLM calls
 │       ├── api/              # Apify API integration
 │       ├── llm/              # LLM formatting and categorization
+│       ├── test/             # Shared test helpers
 │       └── tools/            # File I/O and event utilities
 └── .github/workflows/
-    └── deploy.yml            # GitHub Actions: build + deploy on push to main
+    ├── collect.yml           # GitHub Actions: run collector nightly and on demand
+    ├── deploy.yml            # GitHub Actions: build + deploy on push to main
+    └── test.yml              # GitHub Actions: run tests on pull requests
 ```
 
 ---
