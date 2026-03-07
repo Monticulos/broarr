@@ -10,6 +10,12 @@ The collector uses Apify to discover events from Facebook's location-based event
 4. After manual collection, the collector polls `GET /v2/actor-runs/:runId` until the actor finishes.
 5. Events are fetched from the actor's dataset and merged with manually collected events.
 
+## Schedule
+
+Apify runs every other day (on even UTC dates) to stay within the ~$5/month budget. On skip days, Facebook events from the previous run are preserved.
+
+Manual collection (cinema, etc.) runs daily regardless.
+
 ## What counts as a successful run
 
 - **SUCCEEDED** — the actor finished all its work. Full dataset.
