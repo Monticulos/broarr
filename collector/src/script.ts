@@ -9,6 +9,7 @@ import { deleteExpiredEvents } from "./tools/deleteExpiredEvents.js";
 import { readEventsFile } from "./tools/eventsFile.js";
 import { getValidApifyEvents } from "./api/fetchApifyEvents.js";
 import { mapApifyEventToEvent } from "./api/mapApifyEventToEvent.js";
+import { startApifyActorRun, waitForActorRun } from "./api/runApifyActor.js";
 
 async function collectManualEvents(): Promise<number> {
   console.log("Starting event collection...");
@@ -38,11 +39,11 @@ async function collectManualEvents(): Promise<number> {
   return eventCount;
 }
 
-async function collectApifyEvents(): Promise<number> {
+async function collectApifyEvents(datasetId: string): Promise<number> {
   console.log("Fetching Apify events...");
   let eventCount = 0;
 
-  const apifyEvents = await getValidApifyEvents();
+  const apifyEvents = await getValidApifyEvents(datasetId);
   for (const apifyEvent of apifyEvents) {
     try {
       const event = await mapApifyEventToEvent(apifyEvent);
@@ -60,8 +61,17 @@ async function collectApifyEvents(): Promise<number> {
 async function main() {
   deleteSavedEvents();
 
+  console.log("Starting Apify actor run...");
+  const runId = await startApifyActorRun();
+  console.log(`Apify actor run started (ID: ${runId}). Collecting manual events in parallel...`);
+
   const manualEventCount = await collectManualEvents();
-  const apifyEventCount = await collectApifyEvents();
+
+  console.log("Waiting for Apify actor run to complete...");
+  const datasetId = await waitForActorRun(runId);
+  console.log(`Apify actor run completed (dataset: ${datasetId}).`);
+
+  const apifyEventCount = await collectApifyEvents(datasetId);
 
   sortEvents();
   deleteExpiredEvents();

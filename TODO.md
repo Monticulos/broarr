@@ -8,6 +8,9 @@
 - Download calendar event
 - Make domain work on stricter work networks
 - Manual event links should lead directly to event
+- Analytics service
+- SEO
+- Pagination per month
 
 # Low priority
 - Add a calendar function on a separate page
