@@ -39,8 +39,8 @@ broarr/
 │       └── tools/            # File I/O and event utilities
 └── .github/workflows/
     ├── collect.yml           # GitHub Actions: run collector nightly and on demand
-    ├── deploy.yml            # GitHub Actions: build + deploy on push to main
-    └── test.yml              # GitHub Actions: run tests on pull requests
+    ├── deploy.yml            # GitHub Actions: build + deploy after lint-test passes on main
+    └── lint-test.yml         # GitHub Actions: lint, typecheck and test on push and pull requests
 ```
 
 ---

@@ -1,0 +1,72 @@
+name: Lint, typecheck and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            web/package-lock.json
+            collector/package-lock.json
+
+      - name: Install web dependencies
+        run: npm install
+        working-directory: web
+
+      - name: Install collector dependencies
+        run: npm install
+        working-directory: collector
+
+      - name: Lint web
+        run: npm run lint
+        working-directory: web
+
+      - name: Lint collector
+        run: npm run lint
+        working-directory: collector
+
+      - name: Typecheck web
+        run: npm run typecheck
+        working-directory: web
+
+      - name: Typecheck collector
+        run: npm run typecheck
+        working-directory: collector
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            web/package-lock.json
+            collector/package-lock.json
+
+      - name: Install web dependencies
+        run: npm install
+        working-directory: web
+
+      - name: Install collector dependencies
+        run: npm install
+        working-directory: collector
+
+      - name: Test web
+        run: npm test
+        working-directory: web
+
+      - name: Test collector
+        run: npm test
+        working-directory: collector

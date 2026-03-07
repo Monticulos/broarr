@@ -5,6 +5,7 @@
     "web": "npm run dev --prefix web",
     "collector": "npm start --prefix collector",
     "test": "npm test --prefix web && npm test --prefix collector",
-    "typecheck": "npx --prefix web tsc -b --noEmit web/tsconfig.json && npx --prefix collector tsc --noEmit --project collector/tsconfig.json"
+    "lint": "npm run lint --prefix web && npm run lint --prefix collector",
+    "typecheck": "npm run typecheck --prefix web && npm run typecheck --prefix collector"
   }
 }
