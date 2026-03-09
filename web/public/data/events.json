@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-08T15:20:27.734Z",
+  "updatedAt": "2026-03-09T04:21:37.614Z",
   "events": [
     {
       "title": "Gudstjeneste",
@@ -29,7 +29,7 @@
       "location": "Brønnøy kommune",
       "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-til-folkemote.17395.aspx",
       "id": "Brønnøy-kommune-2026-03-10T17:00:00.000Z",
-      "collectedAt": "2026-03-08T15:19:36.175Z"
+      "collectedAt": "2026-03-09T04:20:55.556Z"
     },
     {
       "title": "Operasjon Bever",
@@ -39,7 +39,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-10T17:00:00.000Z",
-      "collectedAt": "2026-03-08T15:19:41.803Z"
+      "collectedAt": "2026-03-09T04:21:02.219Z"
     },
     {
       "title": "Wuthering Heights",
@@ -49,7 +49,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-10T19:00:00.000Z",
-      "collectedAt": "2026-03-08T15:19:41.803Z"
+      "collectedAt": "2026-03-09T04:21:02.219Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -59,7 +59,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=9b67cdaf-e874-440a-8ecd-b5e98b43692a",
       "id": "Brønnøy-kirke-2026-03-11T10:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:27.734Z"
+      "collectedAt": "2026-03-09T04:21:37.613Z"
     },
     {
       "id": "1240506438009961",
@@ -89,7 +89,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-11T19:00:00.000Z",
-      "collectedAt": "2026-03-08T15:19:41.803Z"
+      "collectedAt": "2026-03-09T04:21:02.219Z"
     },
     {
       "id": "1613391163248701",
@@ -127,9 +127,9 @@
       "category": "quiz",
       "dateTime": "2026-03-12T19:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/b/allmenquiz---19-februar-kl-2000",
+      "url": "https://www.cafekred.no/arrangementer/b/allmenquiz---19-februar-kl-2000",
       "id": "Kred-2026-03-12T19:00:00.000Z",
-      "collectedAt": "2026-03-08T15:19:52.185Z"
+      "collectedAt": "2026-03-09T04:21:13.150Z"
     },
     {
       "title": "Gudstjeneste",
@@ -139,7 +139,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18&OccurenceId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18",
       "id": "Brønnøy-kirke-2026-03-15T10:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:27.734Z"
+      "collectedAt": "2026-03-09T04:21:37.613Z"
     },
     {
       "id": "2129729637781721",
@@ -189,7 +189,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=dee8135a-44ee-4bf7-99bf-6cd2c45b17e8",
       "id": "Brønnøy-kirke-2026-03-18T10:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:27.734Z"
+      "collectedAt": "2026-03-09T04:21:37.613Z"
     },
     {
       "id": "1400890462144393",
@@ -209,7 +209,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=53891794-5db0-4f2b-9f44-01aa734b1b00&OccurenceId=53891794-5db0-4f2b-9f44-01aa734b1b00",
       "id": "Brønnøy-kirke-2026-03-19T10:30:00.000Z",
-      "collectedAt": "2026-03-08T15:20:27.734Z"
+      "collectedAt": "2026-03-09T04:21:37.613Z"
     },
     {
       "id": "1640615373946004",
@@ -249,7 +249,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=629b5fec-acb3-43e9-b6be-e7771a0841ca&OccurenceId=629b5fec-acb3-43e9-b6be-e7771a0841ca",
       "id": "Brønnøy-kirke-2026-03-22T10:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:27.734Z"
+      "collectedAt": "2026-03-09T04:21:37.613Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -269,7 +269,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=22c53a4a-b808-4114-98d3-5f805277927b",
       "id": "Brønnøy-kirke-2026-03-25T10:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:27.734Z"
+      "collectedAt": "2026-03-09T04:21:37.613Z"
     },
     {
       "id": "866619559201849",
@@ -397,9 +397,9 @@
       "category": "kunst-og-kultur",
       "dateTime": "2026-10-10T17:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/b/espen-abrahamsen---avantgarde---10-oktober-kl-1900",
+      "url": "https://www.cafekred.no/arrangementer/b/espen-abrahamsen---avantgarde---10-oktober-kl-1900",
       "id": "Kred-2026-10-10T17:00:00.000Z",
-      "collectedAt": "2026-03-08T15:19:52.185Z"
+      "collectedAt": "2026-03-09T04:21:13.150Z"
     }
   ]
 }
