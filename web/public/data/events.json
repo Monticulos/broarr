@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-03-09T04:21:37.614Z",
+  "updatedAt": "2026-03-10T04:13:22.247Z",
   "events": [
-    {
-      "title": "Gudstjeneste",
-      "description": "Gudstjeneste - Brønnøy kirke",
-      "category": "tro-og-livssyn",
-      "dateTime": "2026-03-08T17:00:00.000Z",
-      "location": "Brønnøy kirke",
-      "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=b3ae5714-debd-45cc-a208-2e5cf46400dd&OccurenceId=b3ae5714-debd-45cc-a208-2e5cf46400dd",
-      "id": "Brønnøy-kirke-2026-03-08T17:00:00.000Z",
-      "collectedAt": "2026-03-08T15:20:27.734Z"
-    },
     {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
@@ -22,14 +12,14 @@
       "collectedAt": "2026-03-08T15:20:11.243Z"
     },
     {
-      "title": "Åpent folkemøte om områderegulering for Brønnøy Kalk Helgeland Museum i Velfjord",
-      "description": "Åpent folkemøte om områderegulering for Brønnøy Kalk Helgeland Museum i Velfjord",
+      "title": "Åpent folkemøte om områderegulering for Brønnøy Kalk",
+      "description": "Helgeland Museum i Velfjord",
       "category": "kommunalt",
       "dateTime": "2026-03-10T17:00:00.000Z",
       "location": "Brønnøy kommune",
       "url": "https://www.bronnoy.kommune.no/aktuelt/invitasjon-til-folkemote.17395.aspx",
       "id": "Brønnøy-kommune-2026-03-10T17:00:00.000Z",
-      "collectedAt": "2026-03-09T04:20:55.556Z"
+      "collectedAt": "2026-03-10T04:11:39.905Z"
     },
     {
       "title": "Operasjon Bever",
@@ -39,7 +29,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-10T17:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:02.219Z"
+      "collectedAt": "2026-03-10T04:11:44.269Z"
     },
     {
       "title": "Wuthering Heights",
@@ -49,7 +39,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-10T19:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:02.219Z"
+      "collectedAt": "2026-03-10T04:11:44.269Z"
     },
     {
       "title": "Trille-Tralle-Treff (babysang)",
@@ -59,7 +49,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=9b67cdaf-e874-440a-8ecd-b5e98b43692a",
       "id": "Brønnøy-kirke-2026-03-11T10:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:37.613Z"
+      "collectedAt": "2026-03-10T04:12:19.470Z"
     },
     {
       "id": "1240506438009961",
@@ -69,7 +59,7 @@
       "dateTime": "2026-03-11T17:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1240506438009961/",
-      "collectedAt": "2026-03-08T04:14:25.913Z"
+      "collectedAt": "2026-03-10T04:13:19.778Z"
     },
     {
       "id": "4463441877217520",
@@ -89,7 +79,7 @@
       "location": "Brønnøy kino",
       "url": "https://www.bronnoy.kommune.no/kino/",
       "id": "Brønnøy-kino-2026-03-11T19:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:02.219Z"
+      "collectedAt": "2026-03-10T04:11:44.269Z"
     },
     {
       "id": "1613391163248701",
@@ -99,7 +89,7 @@
       "dateTime": "2026-03-12T14:00:00.000Z",
       "location": "Brønnøysund videregående skole",
       "url": "https://www.facebook.com/events/1613391163248701/",
-      "collectedAt": "2026-03-08T04:14:21.471Z"
+      "collectedAt": "2026-03-10T04:13:10.987Z"
     },
     {
       "id": "26225559823797002",
@@ -109,7 +99,7 @@
       "dateTime": "2026-03-12T14:15:00.000Z",
       "location": "Brønnøysund videregående skole",
       "url": "https://www.facebook.com/events/26225559823797002/",
-      "collectedAt": "2026-03-08T04:14:27.182Z"
+      "collectedAt": "2026-03-10T04:13:20.097Z"
     },
     {
       "id": "761700400299768",
@@ -119,17 +109,27 @@
       "dateTime": "2026-03-12T18:00:00.000Z",
       "location": "Forsamlingslokalet Brønnøysund",
       "url": "https://www.facebook.com/events/761700400299768/",
-      "collectedAt": "2026-03-08T04:14:19.903Z"
+      "collectedAt": "2026-03-10T04:13:13.471Z"
     },
     {
-      "title": "AllmenQuiz",
-      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert. Quizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før. Det blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.",
+      "id": "1399574978328624",
+      "title": "AllmenQuiz på Kred",
+      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert.\n\nQuizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før.\n\nDet blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.\n\nDet går veldig fint å være med sporadisk også på denne quizen, vi har ingen krav til oppmøtefrekvens.... Alt er slik det har vært i mange år, trygt og godt.\n\nVelkommen til både nye og gamle deltakere!\nDeltakeravgift: 50,- pr. deltaker pr. runde.\n\nNB! Merk datoene som er satt i perioden, og følg med ukentlig, det kan komme uforutsette endringer.\n\nDisse kveldene er det planlagt å avholde AllmenQuiz-serie: \n22. januar, 29. januar, 5. februar, 12. februar, 19. februar, 26, februar, 12. mars, 21. mars, 26. mars, 9. april, 16. april, 23. april, 30. april, 7. mai, 14. mai, 21. mai og 28. mai. ",
       "category": "quiz",
       "dateTime": "2026-03-12T19:00:00.000Z",
       "location": "Kred",
-      "url": "https://www.cafekred.no/arrangementer/b/allmenquiz---19-februar-kl-2000",
-      "id": "Kred-2026-03-12T19:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:13.150Z"
+      "url": "https://www.facebook.com/events/1399574978328624/",
+      "collectedAt": "2026-03-10T04:13:18.231Z"
+    },
+    {
+      "id": "2756833241342061",
+      "title": "Kred's Musikkbingo",
+      "description": "Vinteren er her, men det går mot lysere tider. Hva passer bedre nå på kaldeste vinteren enn å ta turen innom og være med på Kred's Musikk-Bingo! Temaene er ikke bestemt enda, men det blir gøy uansett.\n\nVår bingovert tar dere med til musikkens historie. Vi spiller musikk, du finner ut sangen og ser om den er på bingobrettet. Vanskeligere er det ikke! Alle tidligere deltakere synes dette er kjempegøy.\n\nVi spiller to runder med bingo. Det koster kr. 50,- for bingobrett, og du betaler bare en gang for hele kvelden.\n\nVi har 18-årsgrense.",
+      "category": "quiz",
+      "dateTime": "2026-03-14T20:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/2756833241342061/",
+      "collectedAt": "2026-03-10T04:13:12.743Z"
     },
     {
       "title": "Gudstjeneste",
@@ -139,7 +139,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18&OccurenceId=f817ea6a-0274-4cf6-aa3e-ec452c0cad18",
       "id": "Brønnøy-kirke-2026-03-15T10:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:37.613Z"
+      "collectedAt": "2026-03-10T04:12:19.470Z"
     },
     {
       "id": "2129729637781721",
@@ -189,7 +189,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=dee8135a-44ee-4bf7-99bf-6cd2c45b17e8",
       "id": "Brønnøy-kirke-2026-03-18T10:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:37.613Z"
+      "collectedAt": "2026-03-10T04:12:19.470Z"
     },
     {
       "id": "1400890462144393",
@@ -199,7 +199,7 @@
       "dateTime": "2026-03-18T11:00:00.000Z",
       "location": "Storgata 51, 8900 Brønnøysund, Norge",
       "url": "https://www.facebook.com/events/1400890462144393/",
-      "collectedAt": "2026-03-08T04:14:23.617Z"
+      "collectedAt": "2026-03-10T04:13:20.847Z"
     },
     {
       "title": "Gudstjeneste",
@@ -209,7 +209,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=53891794-5db0-4f2b-9f44-01aa734b1b00&OccurenceId=53891794-5db0-4f2b-9f44-01aa734b1b00",
       "id": "Brønnøy-kirke-2026-03-19T10:30:00.000Z",
-      "collectedAt": "2026-03-09T04:21:37.613Z"
+      "collectedAt": "2026-03-10T04:12:19.470Z"
     },
     {
       "id": "1640615373946004",
@@ -219,7 +219,7 @@
       "dateTime": "2026-03-19T12:00:00.000Z",
       "location": "Brønnøy bibliotek",
       "url": "https://www.facebook.com/events/1640615373946004/",
-      "collectedAt": "2026-03-08T04:14:27.947Z"
+      "collectedAt": "2026-03-10T04:13:19.077Z"
     },
     {
       "id": "1592827455088754",
@@ -229,7 +229,7 @@
       "dateTime": "2026-03-20T18:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1592827455088754/",
-      "collectedAt": "2026-03-08T04:14:21.844Z"
+      "collectedAt": "2026-03-10T04:13:13.140Z"
     },
     {
       "id": "803770719136708",
@@ -239,7 +239,17 @@
       "dateTime": "2026-03-20T19:00:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/803770719136708/",
-      "collectedAt": "2026-03-08T04:14:25.162Z"
+      "collectedAt": "2026-03-10T04:13:22.246Z"
+    },
+    {
+      "title": "AllmenQuiz",
+      "description": "Quiz på Kred er inne i sitt 17 år. Det startet som en ren musikk-quiz, men nå kjører vi allmenquiz med spørsmål om litt av hvert. Quizmaster er den samme, bare enda mer kritisk, satirisk, nerdete og sta enn før. Det blir 16 kvelder i denne vinter-/vårserien. Vi kårer et vinnerlag hver runde, samt trekker premier blant deltakerne. Det blir også kåret en sammenlagtvinner ved serieslutt. Dette laget vinner et gavekort for en større pengesum som kan brukes på Kred.",
+      "category": "quiz",
+      "dateTime": "2026-03-21T19:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.cafekred.no/arrangementer/b/allmenquiz---21-mars-kl-2000",
+      "id": "Kred-2026-03-21T19:00:00.000Z",
+      "collectedAt": "2026-03-10T04:11:53.956Z"
     },
     {
       "title": "Gudstjeneste",
@@ -249,7 +259,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=629b5fec-acb3-43e9-b6be-e7771a0841ca&OccurenceId=629b5fec-acb3-43e9-b6be-e7771a0841ca",
       "id": "Brønnøy-kirke-2026-03-22T10:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:37.613Z"
+      "collectedAt": "2026-03-10T04:12:19.470Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -269,7 +279,7 @@
       "location": "Brønnøy kirke",
       "url": "https://www.bronnoy.kirken.no/Kalenderdetaljer?Publish=Polo&Att=Nei&EventId=1e0d1295-f3e2-475c-ad1f-0a20daaf0366&OccurenceId=22c53a4a-b808-4114-98d3-5f805277927b",
       "id": "Brønnøy-kirke-2026-03-25T10:00:00.000Z",
-      "collectedAt": "2026-03-09T04:21:37.613Z"
+      "collectedAt": "2026-03-10T04:12:19.470Z"
     },
     {
       "id": "866619559201849",
@@ -279,7 +289,7 @@
       "dateTime": "2026-03-25T17:00:00.000Z",
       "location": "Brønnøy Frivilligsentral",
       "url": "https://www.facebook.com/events/866619559201849/",
-      "collectedAt": "2026-03-08T04:14:20.337Z"
+      "collectedAt": "2026-03-10T04:13:21.524Z"
     },
     {
       "id": "1535081147792962",
@@ -289,7 +299,7 @@
       "dateTime": "2026-03-27T20:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1535081147792962/",
-      "collectedAt": "2026-03-08T04:14:23.144Z"
+      "collectedAt": "2026-03-10T04:13:13.813Z"
     },
     {
       "id": "26192453483722736",
@@ -312,6 +322,16 @@
       "collectedAt": "2026-03-08T15:20:11.243Z"
     },
     {
+      "id": "697852660015589",
+      "title": "PåskeQuiz på Kred",
+      "description": "Kred har avholdt påskequiz, (nesten) hver eneste skjærtorsdag i mange år. Dette er blitt en tradisjon for oss.\n\nDet blir å skje i år også, så velkommen til påskequiz folkens!\nTidspunkt, kl. 20.00!",
+      "category": "quiz",
+      "dateTime": "2026-04-02T18:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/697852660015589/",
+      "collectedAt": "2026-03-10T04:13:17.869Z"
+    },
+    {
       "title": "Barseltreff på bibliotek",
       "description": "Barseltreff på bibliotek",
       "category": "barn-og-ungdom",
@@ -329,7 +349,7 @@
       "dateTime": "2026-04-11T17:00:00.000Z",
       "location": "FORSAMLINGSLOKALET - Brønnøysund",
       "url": "https://www.facebook.com/events/1214003247388441/",
-      "collectedAt": "2026-03-08T04:14:19.163Z"
+      "collectedAt": "2026-03-10T04:13:17.129Z"
     },
     {
       "title": "Barseltreff på bibliotek",
@@ -349,7 +369,7 @@
       "dateTime": "2026-04-24T16:30:00.000Z",
       "location": "Brønnøysund samfunnshus",
       "url": "https://www.facebook.com/events/1989127691666557/",
-      "collectedAt": "2026-03-08T04:14:21.103Z"
+      "collectedAt": "2026-03-10T04:13:21.188Z"
     },
     {
       "id": "1442826520606132",
@@ -362,6 +382,16 @@
       "collectedAt": "2026-03-08T04:14:24.016Z"
     },
     {
+      "id": "1507074540847996",
+      "title": "Dr. Bergland - på liv og død  (To forestillinger)",
+      "description": "Ventetiden er over, Dr. Bergland er endelig klar med ny forestilling!\n\nI løpet av de siste årene har Jonas Kinge Bergland etablert seg som en av landets største og mest populære komikere. Siden brakdebuten \"Dr. Bergland og den alternative medisin\" i 2016 har han levert intelligent, kompromissløs og etter eget utsagn \"helt brukbar\" standup, for et stadig større publikum og begeistrede anmeldere. Hans andre og tredje forestilling, \"Dr. Bergland bryter taushetsplikten\" og \"Dr. Bergland uten grenser\" solgte begge nærmere 100.000 billetter og er bl.a. blant Latter i Oslos aller største suksesser noensinne.\n\nForventningene er derfor skyhøye når han nå er klar med \"Dr. Bergland på død og liv\".\nDe siste årene har Jonas jobbet som sykehjemslege og fått god anledning til å reflektere over livet, døden, alderdom og om det er noe høyere mening med alt dette. Sånt kan det bli stor humor av, i hvert fall med Dr. Bergland som avsender.\n\nVi gleder oss stort til å presentere et nytt show med vår favorittlege hos oss!\n\nVi har to forestillinger: \nKl .19.00  (Utsolgt)\nKl. 21.30\n\nBilletter finner du på Kred sin side hos Ticketmaster. ",
+      "category": "kunst-og-kultur",
+      "dateTime": "2026-04-24T17:00:00.000Z",
+      "location": "Kred",
+      "url": "https://www.facebook.com/events/1507074540847996/",
+      "collectedAt": "2026-03-10T04:13:19.406Z"
+    },
+    {
       "id": "1584031199293294",
       "title": "Ole Soo og Nils-Ingar Aadne",
       "description": "To av Norges mest populære og morsomste komikere skal ut på veien for å teste nytt materiale. Når nye vitser skal prøves, kan alt skje – og det eneste som er sikkert, er at det blir morsomt! Enten så ler du med dem eller av dem!\n\nNils-Ingar Aadne startet med stand-up i 2003 og har lenge vært en av landets mest profilerte komikere. Han har gjort utallige opptredener og turnert med soloforestillingene EGO og Da var det oss. Han vant Komiprisen for årets gjennombrudd i 2011, har vært sidekick i Senkveld og deltatt i en rekke TV-programmer som Nytt på Nytt, Brille og 71 grader nord. På scenen byr han på personlige observasjoner og skarp samfunnssatire.\n\nOle Soo startet med standup i 2010 og ble raskt omtalt som en kommende stjerne. Han vant P4s «Komidol» samme år og har siden blitt en ettertraktet komiker, tekstforfatter og regissør. Han er også kjent fra podkasten Enkel Servering, som Roastmaster i Rikets Roast på vgtv og Bordtenniskammeratene med blant andre Morten Ramm. Han har også sitt eget talkshow, «Komiker med Ole Soo», der han gir publikum tilgang bak kulissene i komikerverden. Med sin rappkjeftede og energiske stil leverer Ole alltid topp stemning – og latteren sitter alltid løst.\n\nBilletter i salg på Ticketmaster.",
@@ -369,7 +399,7 @@
       "dateTime": "2026-05-15T17:00:00.000Z",
       "location": "Kred",
       "url": "https://www.facebook.com/events/1584031199293294/",
-      "collectedAt": "2026-03-08T04:14:24.375Z"
+      "collectedAt": "2026-03-10T04:13:14.161Z"
     },
     {
       "id": "1355561149693604",
@@ -379,7 +409,7 @@
       "dateTime": "2026-06-18T20:00:00.000Z",
       "location": "Brønnøysund By",
       "url": "https://www.facebook.com/events/1355561149693604/",
-      "collectedAt": "2026-03-08T04:14:19.522Z"
+      "collectedAt": "2026-03-10T04:13:21.867Z"
     },
     {
       "id": "1518436712711995",
@@ -389,7 +419,7 @@
       "dateTime": "2026-07-15T11:00:00.000Z",
       "location": "Brønnøysund Sentrum",
       "url": "https://www.facebook.com/events/1518436712711995/",
-      "collectedAt": "2026-03-08T04:14:22.332Z"
+      "collectedAt": "2026-03-10T04:13:11.901Z"
     },
     {
       "title": "Espen Abrahamsen - Avantgarde",
